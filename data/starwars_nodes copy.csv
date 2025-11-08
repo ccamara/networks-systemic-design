@@ -1,0 +1,111 @@
+Id,Label,scenes,affiliations,locations,species.droids,episode1,episode2,episode3,episode4,episode5,episode6,Weighted Degree
+0,qui-gon,61,Jedi Order,Other,Human,1,0,0,0,0,0,26
+1,nute gunray,24,Confederacy of Independent Systems,Other,Neimoidian,1,1,1,0,0,0,16
+2,pk-4,3,Trade Federation,Naboo,Droid,1,0,0,0,0,0,2
+3,tc-14,4,Trade Federation,Naboo,Droid,1,0,0,0,0,0,5
+4,obi-wan,147,Jedi Order,Other,Human,1,1,1,1,1,1,35
+5,dofine,3,Trade Federation,Other,Neimoidian,1,0,0,0,0,0,3
+6,rune,10,Trade Federation,Other,Neimoidian,1,1,1,0,0,0,4
+7,tey how,4,Trade Federation,Other,Neimoidian,1,0,0,0,0,0,3
+8,emperor,51,Sith,Naboo,Human,1,1,1,0,1,1,22
+9,captain panaka,19,Other,Naboo,Human,1,0,0,0,0,0,9
+10,sio bibble,8,Other,Naboo,Human,1,1,1,0,0,0,8
+11,jar jar,41,Other,Naboo,Gungan,1,1,1,0,0,0,24
+12,tarpals,3,Other,Naboo,Gungan,1,0,0,0,0,0,1
+13,boss nass,4,Other,Naboo,Gungan,1,0,1,0,0,0,6
+14,padme,74,Other,Naboo,Human,1,1,1,0,0,0,33
+15,ric olie,11,Other,Naboo,Human,1,0,0,0,0,0,7
+16,watto,8,Other,Tatooine,Other,1,1,0,0,0,0,5
+17,anakin,131,Jedi Order,Tatooine,Human,1,1,1,0,0,1,41
+18,sebulba,3,Other,Tatooine,Other,1,0,0,0,0,0,6
+19,jira,3,Other,Tatooine,Human,1,0,0,0,0,0,3
+20,shmi,11,Other,Tatooine,Human,1,1,0,0,0,0,8
+21,c-3po,150,Rebel Alliance,Tatooine,Droid,1,1,1,1,1,1,33
+22,darth maul,5,Sith,Other,Other,1,0,0,0,0,0,4
+23,kitster,4,Other,Tatooine,Human,1,0,0,0,0,0,8
+24,wald,3,Other,Tatooine,Rodian,1,0,0,0,0,0,5
+25,fode/beed,11,Other,Tatooine,Other,1,0,0,0,0,0,3
+26,jabba,7,Other,Tatooine,Other,1,0,0,1,0,1,12
+27,greedo,3,Other,Tatooine,Rodian,0,0,0,1,0,0,4
+28,valorum,3,Galactic Republic,Other,Human,1,0,0,0,0,0,4
+29,mace windu,22,Jedi Order,Other,Human,1,1,0,0,0,0,13
+30,ki-adi-mundi,6,Jedi Order,Other,Other,1,1,1,0,0,0,9
+31,yoda,45,Jedi Order,Other,Unknown,1,1,1,0,1,1,16
+32,rabe,2,Galactic Republic,Naboo,Human,1,0,0,0,0,0,5
+33,bail organa,23,Galactic Republic,Alderaan,Human,0,1,1,0,0,0,16
+34,general ceel,4,Other,Naboo,Gungan,1,0,0,0,0,0,4
+35,bravo two,5,Galactic Republic,Naboo,Human,1,0,0,0,0,0,3
+36,bravo three,3,Galactic Republic,Naboo,Human,1,0,0,0,0,0,3
+37,captain typho,6,Other,Naboo,Human,0,1,1,0,0,0,5
+38,senator ask aak,3,Other,Coruscant,Other,0,1,0,0,0,0,7
+39,orn free taa,3,Other,Other,Twi'lek,1,1,1,0,0,0,3
+40,sola,3,Galactic Republic,Naboo,Human,1,1,0,0,0,0,4
+41,jobal,3,Galactic Republic,Naboo,Human,0,1,0,0,0,0,4
+42,ruwee,4,Galactic Republic,Naboo,Human,0,1,0,0,0,0,4
+43,taun we,7,Other,Other,Kaminoan,0,1,0,0,0,0,4
+44,lama su,8,Other,Other,Kaminoan,0,1,0,0,0,0,2
+45,boba fett,10,Other,Other,Human,0,1,0,1,1,1,9
+46,jango fett,5,Other,Other,Human,0,1,0,0,0,0,4
+47,owen,10,Other,Tatooine,Human,0,1,1,1,0,0,6
+48,beru,6,Other,Tatooine,Human,0,1,1,1,0,0,7
+49,cliegg,3,Other,Tatooine,Human,0,1,0,0,0,0,5
+50,count dooku,9,Sith,Other,Human,0,1,1,0,0,0,10
+51,sun rit,3,Confederacy of Independent Systems,Other,Geonosian,0,0,1,0,0,0,6
+52,poggle,3,Confederacy of Independent Systems,Other,Geonosian,0,1,1,0,0,0,6
+53,plo koon,3,Jedi Order,Other,Other,1,1,1,0,0,0,1
+54,odd ball,4,Galactic Republic,Coruscant,Human,0,0,1,0,0,0,2
+55,general grievous,12,Confederacy of Independent Systems,Other,Droid,0,0,1,0,0,0,3
+56,fang zar,3,Galactic Republic,Coruscant,Human,0,0,1,0,0,0,4
+57,mon mothma,4,Galactic Republic,Other,Human,0,0,1,0,0,1,10
+58,giddean danu,2,Galactic Republic,Coruscant,Human,0,0,1,0,0,0,4
+59,clone commander gree,4,Galactic Republic,Other,Human,0,0,1,0,0,0,1
+60,clone commander cody,4,Galactic Republic,Other,Human,0,0,1,0,0,0,4
+61,tion medon,3,Other,Other,Other,0,0,1,0,0,0,1
+62,captain antilles,3,Rebel Alliance,Alderaan,Human,0,0,0,1,0,0,2
+63,darth vader,58,Sith,Death Star,Human,0,0,1,1,1,1,15
+64,luke,160,Other,Tatooine,Human,0,0,1,1,1,1,24
+65,camie,3,Other,Tatooine,Human,0,0,0,1,0,0,2
+66,biggs,18,Rebel Alliance,Tatooine,Human,0,0,0,1,1,0,7
+67,leia,98,Rebel Alliance,Alderaan,Human,0,0,0,1,1,1,21
+68,motti,3,Other,Death Star,Human,0,0,0,1,0,0,3
+69,tarkin,12,Other,Death Star,Human,0,0,1,1,0,0,3
+70,han,169,Rebel Alliance,Other,Human,0,0,0,1,1,1,23
+71,dodonna,3,Rebel Alliance,Other,Human,0,0,0,1,0,0,3
+72,gold leader,14,Rebel Alliance,Death Star,Human,0,0,0,1,0,0,5
+73,wedge,28,Rebel Alliance,Other,Human,0,0,0,1,1,1,8
+74,red leader,33,Rebel Alliance,Other,Human,0,0,0,1,0,0,7
+75,red ten,8,Rebel Alliance,Death Star,Human,0,0,0,1,0,0,2
+76,gold five,8,Rebel Alliance,Death Star,Human,0,0,0,1,0,0,0
+77,rieekan,7,Rebel Alliance,Alderaan,Human,0,0,0,0,1,0,3
+78,derlin,3,Rebel Alliance,Hoth,Human,0,0,0,0,1,0,2
+79,zev,6,Rebel Alliance,Hoth,Human,0,0,0,0,1,0,2
+80,piett,12,The Galactic Empire,Other,Human,0,0,0,0,1,0,4
+81,ozzel,3,The Galactic Empire,Other,Human,0,0,0,0,1,0,2
+82,dack,4,Rebel Alliance,Hoth,Human,0,0,0,0,1,0,1
+83,janson,4,Rebel Alliance,Hoth,Human,0,0,0,0,1,0,1
+84,needa,3,The Galactic Empire,Hoth,Human,0,0,0,0,1,0,2
+85,lando,41,Rebel Alliance,Other,Human,0,0,0,0,1,1,9
+86,jerjerrod,3,The Galactic Empire,Other,Human,0,0,0,0,0,1,1
+87,bib fortuna,3,Other,Other,Twi'lek,0,0,0,0,0,1,3
+88,boushh,3,Other,Other,Human,0,0,0,0,0,1,4
+89,admiral ackbar,12,Rebel Alliance,Other,Other,0,0,0,1,1,1,11
+90,lor san tekka,4,Other,Jakku,Human,0,0,0,0,0,0,3
+91,poe,30,The Resistance,Other,Human,0,0,0,0,0,0,14
+92,kylo ren,22,The First Order,Other,Human,0,0,0,0,1,0,9
+93,captain phasma,6,The First Order,Other,Human,0,0,0,0,0,0,6
+94,finn,63,The Resistance,Jakku,Human,0,0,0,0,0,0,12
+95,unkar plutt,5,Other,Jakku,Other,0,0,0,0,0,0,1
+96,rey,56,The Resistance,Jakku,Human,0,0,0,0,0,0,7
+97,general hux,14,The First Order,Other,Human,0,0,0,0,0,0,5
+98,lieutenant mitaka,3,The First Order,Other,Human,0,0,0,0,0,0,2
+99,bala-tik,4,Other,Other,Human,0,0,0,0,0,0,3
+100,snoke,4,Other,Other,Unknown,0,0,0,1,1,1,2
+101,maz,6,The Resistance,Other,Other,0,0,0,0,0,0,3
+102,bb-8,2,The Resistance,Other,Droid,0,0,0,0,0,0,1
+103,snap,5,The Resistance,Other,Human,0,0,0,0,0,0,8
+104,admiral statura,3,The Resistance,Other,Human,0,0,0,0,0,0,7
+105,yolo ziff,3,The Resistance,Other,Human,0,0,0,0,0,0,4
+106,colonel datoo,3,The First Order,Other,Human,0,0,0,0,0,0,1
+107,ello asty,4,The Resistance,Other,Other,0,0,0,0,0,0,4
+108,jess,4,The Resistance,Other,Human,0,0,0,0,0,0,5
+109,niv lek,3,The Resistance,Other,Human,0,0,0,0,0,0,4
