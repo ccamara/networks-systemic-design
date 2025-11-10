@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <gexf xmlns="http://gexf.net/1.3" version="1.3" xmlns:viz="http://gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gexf.net/1.3 http://gexf.net/1.3/gexf.xsd">
-  <meta lastmodifieddate="2025-11-04">
+  <meta lastmodifieddate="2025-11-10">
     <creator>Gephi 0.10.1</creator>
     <title></title>
     <description></description>
@@ -12,12 +12,17 @@
       <attribute id="locations" title="locations" type="string"/>
       <attribute id="species.droids" title="species.droids" type="string"/>
       <attribute id="episode1" title="episode1" type="integer"/>
-      <attribute id="episode2" title="episode2" type="listboolean"/>
+      <attribute id="episode2" title="episode2" type="integer"/>
       <attribute id="episode3" title="episode3" type="integer"/>
       <attribute id="episode4" title="episode4" type="integer"/>
       <attribute id="episode5" title="episode5" type="integer"/>
       <attribute id="episode6" title="episode6" type="integer"/>
-      <attribute id="weighted degree" title="weighted degree" type="integer"/>
+      <attribute id="degree" title="Degree" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="weighted degree" title="Weighted Degree" type="double">
+        <default>0.0</default>
+      </attribute>
     </attributes>
     <attributes class="edge" mode="static">
       <attribute id="value" title="value" type="integer"/>
@@ -30,16 +35,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="26"/>
+          <attvalue for="degree" value="26"/>
+          <attvalue for="weighted degree" value="139.0"/>
         </attvalues>
-        <viz:size value="7.712575"/>
-        <viz:position x="-27.38575" y="-12.11799"/>
-        <viz:color r="255" g="136" b="5"/>
+        <viz:size value="39.433594"/>
+        <viz:position x="1052.7965" y="-11.407998"/>
+        <viz:color r="215" g="72" b="109"/>
       </node>
       <node id="1" label="nute gunray">
         <attvalues>
@@ -48,16 +54,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Neimoidian"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="16"/>
+          <attvalue for="degree" value="16"/>
+          <attvalue for="weighted degree" value="34.0"/>
         </attvalues>
-        <viz:size value="3.502994"/>
-        <viz:position x="-61.285606" y="33.389603"/>
-        <viz:color r="192" g="192" b="192"/>
+        <viz:size value="20.976562"/>
+        <viz:position x="1441.4036" y="1887.582"/>
+        <viz:color r="0" g="172" b="163"/>
       </node>
       <node id="2" label="pk-4">
         <attvalues>
@@ -66,16 +73,17 @@
           <attvalue for="locations" value="Naboo"/>
           <attvalue for="species.droids" value="Droid"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="2"/>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="2.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="-42.6602" y="61.48523"/>
-        <viz:color r="0" g="189" b="148"/>
+        <viz:size value="15.3515625"/>
+        <viz:position x="501.47827" y="2311.5388"/>
+        <viz:color r="45" g="120" b="88"/>
       </node>
       <node id="3" label="tc-14">
         <attvalues>
@@ -84,16 +92,17 @@
           <attvalue for="locations" value="Naboo"/>
           <attvalue for="species.droids" value="Droid"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="5"/>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="5.0"/>
         </attvalues>
-        <viz:size value="1.2275449"/>
-        <viz:position x="-57.472275" y="49.348995"/>
-        <viz:color r="0" g="189" b="148"/>
+        <viz:size value="15.878906"/>
+        <viz:position x="787.8332" y="2324.0781"/>
+        <viz:color r="45" g="120" b="88"/>
       </node>
       <node id="4" label="obi-wan">
         <attvalues>
@@ -102,16 +111,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="35"/>
+          <attvalue for="degree" value="35"/>
+          <attvalue for="weighted degree" value="227.0"/>
         </attvalues>
-        <viz:size value="17.497005"/>
-        <viz:position x="-5.1644197" y="32.055065"/>
-        <viz:color r="255" g="136" b="5"/>
+        <viz:size value="54.902344"/>
+        <viz:position x="284.02344" y="1248.011"/>
+        <viz:color r="215" g="72" b="109"/>
       </node>
       <node id="5" label="dofine">
         <attvalues>
@@ -120,16 +130,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Neimoidian"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="3"/>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="3.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="-85.74648" y="56.78659"/>
-        <viz:color r="0" g="189" b="148"/>
+        <viz:size value="15.527344"/>
+        <viz:position x="1186.8134" y="2520.6106"/>
+        <viz:color r="45" g="120" b="88"/>
       </node>
       <node id="6" label="rune">
         <attvalues>
@@ -138,16 +149,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Neimoidian"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="4"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="14.0"/>
         </attvalues>
-        <viz:size value="1.9101796"/>
-        <viz:position x="-85.14627" y="42.04938"/>
-        <viz:color r="0" g="189" b="148"/>
+        <viz:size value="17.460938"/>
+        <viz:position x="1578.7091" y="2177.53"/>
+        <viz:color r="45" g="120" b="88"/>
       </node>
       <node id="7" label="tey how">
         <attvalues>
@@ -156,16 +168,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Neimoidian"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="3"/>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="4.0"/>
         </attvalues>
-        <viz:size value="1.2275449"/>
-        <viz:position x="-94.645325" y="52.76746"/>
-        <viz:color r="0" g="189" b="148"/>
+        <viz:size value="15.703125"/>
+        <viz:position x="1389.505" y="2439.5469"/>
+        <viz:color r="45" g="120" b="88"/>
       </node>
       <node id="8" label="emperor">
         <attvalues>
@@ -174,16 +187,17 @@
           <attvalue for="locations" value="Naboo"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="22"/>
+          <attvalue for="degree" value="22"/>
+          <attvalue for="weighted degree" value="79.0"/>
         </attvalues>
-        <viz:size value="6.57485"/>
-        <viz:position x="-33.764275" y="18.154726"/>
-        <viz:color r="192" g="192" b="192"/>
+        <viz:size value="28.886719"/>
+        <viz:position x="1599.4858" y="1141.6115"/>
+        <viz:color r="109" g="159" b="0"/>
       </node>
       <node id="9" label="captain panaka">
         <attvalues>
@@ -192,16 +206,17 @@
           <attvalue for="locations" value="Naboo"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="9"/>
+          <attvalue for="degree" value="9"/>
+          <attvalue for="weighted degree" value="41.0"/>
         </attvalues>
-        <viz:size value="2.9341316"/>
-        <viz:position x="-48.172657" y="-16.243608"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="22.207031"/>
+        <viz:position x="1929.3109" y="412.0643"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="10" label="sio bibble">
         <attvalues>
@@ -210,16 +225,17 @@
           <attvalue for="locations" value="Naboo"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="8"/>
+          <attvalue for="degree" value="8"/>
+          <attvalue for="weighted degree" value="12.0"/>
         </attvalues>
-        <viz:size value="1.6826348"/>
-        <viz:position x="-44.728302" y="-0.788752"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="17.109375"/>
+        <viz:position x="1960.0632" y="873.6017"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="11" label="jar jar">
         <attvalues>
@@ -228,16 +244,17 @@
           <attvalue for="locations" value="Naboo"/>
           <attvalue for="species.droids" value="Gungan"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="24"/>
+          <attvalue for="degree" value="24"/>
+          <attvalue for="weighted degree" value="95.0"/>
         </attvalues>
-        <viz:size value="5.4371257"/>
-        <viz:position x="-35.52582" y="-26.319782"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="31.699219"/>
+        <viz:position x="1531.4514" y="307.3099"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="12" label="tarpals">
         <attvalues>
@@ -246,16 +263,17 @@
           <attvalue for="locations" value="Naboo"/>
           <attvalue for="species.droids" value="Gungan"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="1"/>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="2.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="-63.284798" y="-47.852436"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="15.3515625"/>
+        <viz:position x="2174.4783" y="283.34476"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="13" label="boss nass">
         <attvalues>
@@ -264,16 +282,17 @@
           <attvalue for="locations" value="Naboo"/>
           <attvalue for="species.droids" value="Gungan"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="6"/>
+          <attvalue for="degree" value="6"/>
+          <attvalue for="weighted degree" value="10.0"/>
         </attvalues>
-        <viz:size value="1.2275449"/>
-        <viz:position x="-37.716076" y="-16.082735"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="16.757812"/>
+        <viz:position x="1693.8754" y="39.44402"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="14" label="padme">
         <attvalues>
@@ -282,16 +301,17 @@
           <attvalue for="locations" value="Naboo"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="33"/>
+          <attvalue for="degree" value="33"/>
+          <attvalue for="weighted degree" value="149.0"/>
         </attvalues>
-        <viz:size value="9.191616"/>
-        <viz:position x="3.4183517" y="-11.286833"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="41.191406"/>
+        <viz:position x="534.3104" y="-433.4905"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="15" label="ric olie">
         <attvalues>
@@ -300,16 +320,17 @@
           <attvalue for="locations" value="Naboo"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="7"/>
+          <attvalue for="degree" value="7"/>
+          <attvalue for="weighted degree" value="18.0"/>
         </attvalues>
-        <viz:size value="2.023952"/>
-        <viz:position x="-50.558815" y="-34.72058"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="18.164062"/>
+        <viz:position x="2324.0903" y="-0.9692743"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="16" label="watto">
         <attvalues>
@@ -318,16 +339,17 @@
           <attvalue for="locations" value="Tatooine"/>
           <attvalue for="species.droids" value="Other"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="5"/>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="16.0"/>
         </attvalues>
-        <viz:size value="1.6826348"/>
-        <viz:position x="14.23075" y="-26.658895"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="17.8125"/>
+        <viz:position x="981.6168" y="-554.6689"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="17" label="anakin">
         <attvalues>
@@ -336,16 +358,17 @@
           <attvalue for="locations" value="Tatooine"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="41"/>
+          <attvalue for="degree" value="41"/>
+          <attvalue for="weighted degree" value="229.0"/>
         </attvalues>
-        <viz:size value="15.676647"/>
-        <viz:position x="-11.496929" y="-14.862989"/>
-        <viz:color r="255" g="136" b="5"/>
+        <viz:size value="55.253906"/>
+        <viz:position x="1607.214" y="-368.23712"/>
+        <viz:color r="215" g="72" b="109"/>
       </node>
       <node id="18" label="sebulba">
         <attvalues>
@@ -354,16 +377,17 @@
           <attvalue for="locations" value="Tatooine"/>
           <attvalue for="species.droids" value="Other"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="6"/>
+          <attvalue for="degree" value="6"/>
+          <attvalue for="weighted degree" value="10.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="-8.700166" y="-40.797062"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="16.757812"/>
+        <viz:position x="1228.0701" y="-1069.6285"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="19" label="jira">
         <attvalues>
@@ -372,16 +396,17 @@
           <attvalue for="locations" value="Tatooine"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="3"/>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="5.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="-19.983364" y="-33.626747"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="15.878906"/>
+        <viz:position x="1110.8436" y="-350.03052"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="20" label="shmi">
         <attvalues>
@@ -390,16 +415,17 @@
           <attvalue for="locations" value="Tatooine"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="8"/>
+          <attvalue for="degree" value="8"/>
+          <attvalue for="weighted degree" value="28.0"/>
         </attvalues>
-        <viz:size value="2.023952"/>
-        <viz:position x="-5.6669745" y="-32.573574"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="19.921875"/>
+        <viz:position x="1130.3728" y="-812.90344"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="21" label="c-3po">
         <attvalues>
@@ -408,16 +434,17 @@
           <attvalue for="locations" value="Tatooine"/>
           <attvalue for="species.droids" value="Droid"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="33"/>
+          <attvalue for="degree" value="33"/>
+          <attvalue for="weighted degree" value="213.0"/>
         </attvalues>
-        <viz:size value="17.838324"/>
-        <viz:position x="64.72373" y="10.3194"/>
-        <viz:color r="115" g="192" b="0"/>
+        <viz:size value="52.441406"/>
+        <viz:position x="-653.07935" y="-221.32399"/>
+        <viz:color r="230" g="96" b="230"/>
       </node>
       <node id="22" label="darth maul">
         <attvalues>
@@ -426,16 +453,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Other"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="4"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="8.0"/>
         </attvalues>
-        <viz:size value="1.3413174"/>
-        <viz:position x="-82.49856" y="32.37004"/>
-        <viz:color r="192" g="192" b="192"/>
+        <viz:size value="16.40625"/>
+        <viz:position x="1673.7175" y="1989.7635"/>
+        <viz:color r="109" g="159" b="0"/>
       </node>
       <node id="23" label="kitster">
         <attvalues>
@@ -444,16 +472,17 @@
           <attvalue for="locations" value="Tatooine"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="8"/>
+          <attvalue for="degree" value="8"/>
+          <attvalue for="weighted degree" value="11.0"/>
         </attvalues>
-        <viz:size value="1.2275449"/>
-        <viz:position x="3.5692787" y="-36.141544"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="16.933594"/>
+        <viz:position x="1194.6318" y="-712.5106"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="24" label="wald">
         <attvalues>
@@ -462,16 +491,17 @@
           <attvalue for="locations" value="Tatooine"/>
           <attvalue for="species.droids" value="Rodian"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="5"/>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="7.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="-17.024307" y="-42.28061"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="16.230469"/>
+        <viz:position x="1756.5084" y="-729.6692"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="25" label="fode/beed">
         <attvalues>
@@ -480,16 +510,17 @@
           <attvalue for="locations" value="Tatooine"/>
           <attvalue for="species.droids" value="Other"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="3"/>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="4.0"/>
         </attvalues>
-        <viz:size value="2.023952"/>
-        <viz:position x="7.4599824" y="-43.76697"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="15.703125"/>
+        <viz:position x="962.1928" y="-1579.3988"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="26" label="jabba">
         <attvalues>
@@ -498,16 +529,17 @@
           <attvalue for="locations" value="Tatooine"/>
           <attvalue for="species.droids" value="Other"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="12"/>
+          <attvalue for="degree" value="12"/>
+          <attvalue for="weighted degree" value="15.0"/>
         </attvalues>
-        <viz:size value="1.5688622"/>
-        <viz:position x="34.588985" y="-25.072231"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="17.636719"/>
+        <viz:position x="622.5913" y="-1143.9901"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="27" label="greedo">
         <attvalues>
@@ -516,16 +548,17 @@
           <attvalue for="locations" value="Tatooine"/>
           <attvalue for="species.droids" value="Rodian"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="4"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="4.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="23.182306" y="-15.209387"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="15.703125"/>
+        <viz:position x="1683.6147" y="-802.2284"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="28" label="valorum">
         <attvalues>
@@ -534,16 +567,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="4"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="5.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="-42.259914" y="-7.5506034"/>
-        <viz:color r="0" g="196" b="255"/>
+        <viz:size value="15.878906"/>
+        <viz:position x="1156.135" y="405.0037"/>
+        <viz:color r="255" g="83" b="26"/>
       </node>
       <node id="29" label="mace windu">
         <attvalues>
@@ -552,16 +586,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="13"/>
+          <attvalue for="degree" value="13"/>
+          <attvalue for="weighted degree" value="53.0"/>
         </attvalues>
-        <viz:size value="3.275449"/>
-        <viz:position x="-34.32708" y="7.381463"/>
-        <viz:color r="255" g="136" b="5"/>
+        <viz:size value="24.316406"/>
+        <viz:position x="725.0298" y="726.5483"/>
+        <viz:color r="215" g="72" b="109"/>
       </node>
       <node id="30" label="ki-adi-mundi">
         <attvalues>
@@ -570,16 +605,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Other"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="9"/>
+          <attvalue for="degree" value="9"/>
+          <attvalue for="weighted degree" value="17.0"/>
         </attvalues>
-        <viz:size value="1.4550898"/>
-        <viz:position x="-50.07149" y="8.762469"/>
-        <viz:color r="255" g="136" b="5"/>
+        <viz:size value="17.988281"/>
+        <viz:position x="646.029" y="379.04907"/>
+        <viz:color r="215" g="72" b="109"/>
       </node>
       <node id="31" label="yoda">
         <attvalues>
@@ -588,16 +624,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Unknown"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="16"/>
+          <attvalue for="degree" value="16"/>
+          <attvalue for="weighted degree" value="77.0"/>
         </attvalues>
-        <viz:size value="5.8922157"/>
-        <viz:position x="-15.453668" y="12.28226"/>
-        <viz:color r="255" g="136" b="5"/>
+        <viz:size value="28.535156"/>
+        <viz:position x="334.2964" y="440.2589"/>
+        <viz:color r="215" g="72" b="109"/>
       </node>
       <node id="32" label="rabe">
         <attvalues>
@@ -606,16 +643,17 @@
           <attvalue for="locations" value="Naboo"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="5"/>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="5.0"/>
         </attvalues>
-        <viz:size value="1.0"/>
-        <viz:position x="-52.27843" y="-3.6753573"/>
-        <viz:color r="0" g="196" b="255"/>
+        <viz:size value="15.878906"/>
+        <viz:position x="880.05493" y="285.27878"/>
+        <viz:color r="255" g="83" b="26"/>
       </node>
       <node id="33" label="bail organa">
         <attvalues>
@@ -624,16 +662,17 @@
           <attvalue for="locations" value="Alderaan"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="16"/>
+          <attvalue for="degree" value="16"/>
+          <attvalue for="weighted degree" value="46.0"/>
         </attvalues>
-        <viz:size value="3.3892214"/>
-        <viz:position x="0.9611614" y="10.637772"/>
-        <viz:color r="0" g="196" b="255"/>
+        <viz:size value="23.085938"/>
+        <viz:position x="0.019434053" y="0.02141395"/>
+        <viz:color r="255" g="83" b="26"/>
       </node>
       <node id="34" label="general ceel">
         <attvalues>
@@ -642,16 +681,17 @@
           <attvalue for="locations" value="Naboo"/>
           <attvalue for="species.droids" value="Gungan"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="4"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="4.0"/>
         </attvalues>
-        <viz:size value="1.2275449"/>
-        <viz:position x="-74.56546" y="16.308693"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="15.703125"/>
+        <viz:position x="1722.7604" y="1695.6251"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="35" label="bravo two">
         <attvalues>
@@ -660,16 +700,17 @@
           <attvalue for="locations" value="Naboo"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="3"/>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="8.0"/>
         </attvalues>
-        <viz:size value="1.3413174"/>
-        <viz:position x="-54.723984" y="-50.893314"/>
-        <viz:color r="0" g="196" b="255"/>
+        <viz:size value="16.40625"/>
+        <viz:position x="2705.0767" y="-56.945923"/>
+        <viz:color r="255" g="83" b="26"/>
       </node>
       <node id="36" label="bravo three">
         <attvalues>
@@ -678,16 +719,17 @@
           <attvalue for="locations" value="Naboo"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="3"/>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="5.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="-51.09213" y="-53.315395"/>
-        <viz:color r="0" g="196" b="255"/>
+        <viz:size value="15.878906"/>
+        <viz:position x="2627.2358" y="-225.24048"/>
+        <viz:color r="255" g="83" b="26"/>
       </node>
       <node id="37" label="captain typho">
         <attvalues>
@@ -696,16 +738,17 @@
           <attvalue for="locations" value="Naboo"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="5"/>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="10.0"/>
         </attvalues>
-        <viz:size value="1.4550898"/>
-        <viz:position x="12.045162" y="0.82998616"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="16.757812"/>
+        <viz:position x="429.635" y="-20.935076"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="38" label="senator ask aak">
         <attvalues>
@@ -714,16 +757,17 @@
           <attvalue for="locations" value="Coruscant"/>
           <attvalue for="species.droids" value="Other"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="7"/>
+          <attvalue for="degree" value="7"/>
+          <attvalue for="weighted degree" value="8.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="-45.405674" y="15.654832"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="16.40625"/>
+        <viz:position x="1025.5262" y="860.00867"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="39" label="orn free taa">
         <attvalues>
@@ -732,16 +776,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Twi'lek"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="3"/>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="4.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="-64.42802" y="-0.37338758"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="15.703125"/>
+        <viz:position x="1424.3341" y="830.4542"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="40" label="sola">
         <attvalues>
@@ -750,16 +795,17 @@
           <attvalue for="locations" value="Naboo"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="4"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="5.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="-7.3904357" y="-55.563156"/>
-        <viz:color r="0" g="196" b="255"/>
+        <viz:size value="15.878906"/>
+        <viz:position x="1878.707" y="-1241.0499"/>
+        <viz:color r="255" g="83" b="26"/>
       </node>
       <node id="41" label="jobal">
         <attvalues>
@@ -768,16 +814,17 @@
           <attvalue for="locations" value="Naboo"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="4"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="5.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="-11.72842" y="-58.431816"/>
-        <viz:color r="0" g="196" b="255"/>
+        <viz:size value="15.878906"/>
+        <viz:position x="2002.5327" y="-1059.5294"/>
+        <viz:color r="255" g="83" b="26"/>
       </node>
       <node id="42" label="ruwee">
         <attvalues>
@@ -786,16 +833,17 @@
           <attvalue for="locations" value="Naboo"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="4"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="6.0"/>
         </attvalues>
-        <viz:size value="1.2275449"/>
-        <viz:position x="-4.4578586" y="-59.072212"/>
-        <viz:color r="0" g="196" b="255"/>
+        <viz:size value="16.054688"/>
+        <viz:position x="2093.813" y="-1257.4557"/>
+        <viz:color r="255" g="83" b="26"/>
       </node>
       <node id="43" label="taun we">
         <attvalues>
@@ -804,16 +852,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Kaminoan"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="4"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="10.0"/>
         </attvalues>
-        <viz:size value="1.5688622"/>
-        <viz:position x="17.26814" y="72.87028"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="16.757812"/>
+        <viz:position x="-528.5567" y="1664.4912"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="44" label="lama su">
         <attvalues>
@@ -822,16 +871,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Kaminoan"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="2"/>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="8.0"/>
         </attvalues>
-        <viz:size value="1.6826348"/>
-        <viz:position x="2.4460726" y="72.85687"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="16.40625"/>
+        <viz:position x="-400.76245" y="1830.3787"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="45" label="boba fett">
         <attvalues>
@@ -840,16 +890,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="9"/>
+          <attvalue for="degree" value="9"/>
+          <attvalue for="weighted degree" value="15.0"/>
         </attvalues>
-        <viz:size value="1.9101796"/>
-        <viz:position x="59.174942" y="57.462578"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="17.636719"/>
+        <viz:position x="-962.60016" y="1124.6968"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="46" label="jango fett">
         <attvalues>
@@ -858,16 +909,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="4"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="6.0"/>
         </attvalues>
-        <viz:size value="1.3413174"/>
-        <viz:position x="10.714364" y="65.016426"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="16.054688"/>
+        <viz:position x="-376.27625" y="1484.4187"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="47" label="owen">
         <attvalues>
@@ -876,16 +928,17 @@
           <attvalue for="locations" value="Tatooine"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="6"/>
+          <attvalue for="degree" value="6"/>
+          <attvalue for="weighted degree" value="20.0"/>
         </attvalues>
-        <viz:size value="1.9101796"/>
-        <viz:position x="45.037453" y="-17.149696"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="18.515625"/>
+        <viz:position x="204.21582" y="-973.7352"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="48" label="beru">
         <attvalues>
@@ -894,16 +947,17 @@
           <attvalue for="locations" value="Tatooine"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="7"/>
+          <attvalue for="degree" value="7"/>
+          <attvalue for="weighted degree" value="14.0"/>
         </attvalues>
-        <viz:size value="1.4550898"/>
-        <viz:position x="51.856968" y="-8.846561"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="17.460938"/>
+        <viz:position x="-10.755859" y="-891.0968"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="49" label="cliegg">
         <attvalues>
@@ -912,16 +966,17 @@
           <attvalue for="locations" value="Tatooine"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="5"/>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="8.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="36.282753" y="-12.82955"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="16.40625"/>
+        <viz:position x="107.46474" y="-731.87836"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="50" label="count dooku">
         <attvalues>
@@ -930,16 +985,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="10"/>
+          <attvalue for="degree" value="10"/>
+          <attvalue for="weighted degree" value="19.0"/>
         </attvalues>
-        <viz:size value="1.7964072"/>
-        <viz:position x="-26.344734" y="38.66069"/>
-        <viz:color r="192" g="192" b="192"/>
+        <viz:size value="18.339844"/>
+        <viz:position x="860.91943" y="1191.0619"/>
+        <viz:color r="109" g="159" b="0"/>
       </node>
       <node id="51" label="sun rit">
         <attvalues>
@@ -948,16 +1004,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Geonosian"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="6"/>
+          <attvalue for="degree" value="6"/>
+          <attvalue for="weighted degree" value="8.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="-30.887114" y="31.842422"/>
-        <viz:color r="192" g="192" b="192"/>
+        <viz:size value="16.40625"/>
+        <viz:position x="1089.3596" y="1434.8386"/>
+        <viz:color r="0" g="172" b="163"/>
       </node>
       <node id="52" label="poggle">
         <attvalues>
@@ -966,16 +1023,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Geonosian"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="6"/>
+          <attvalue for="degree" value="6"/>
+          <attvalue for="weighted degree" value="8.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="-35.43218" y="35.762917"/>
-        <viz:color r="192" g="192" b="192"/>
+        <viz:size value="16.40625"/>
+        <viz:position x="809.7717" y="1513.4885"/>
+        <viz:color r="0" g="172" b="163"/>
       </node>
       <node id="53" label="plo koon">
         <attvalues>
@@ -984,16 +1042,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Other"/>
           <attvalue for="episode1" value="1"/>
-          <attvalue for="episode2" value="[true]"/>
+          <attvalue for="episode2" value="1"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="1"/>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="1.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="-84.22246" y="6.886657"/>
-        <viz:color r="255" g="136" b="5"/>
+        <viz:size value="15.175781"/>
+        <viz:position x="841.74274" y="473.3971"/>
+        <viz:color r="215" g="72" b="109"/>
       </node>
       <node id="54" label="odd ball">
         <attvalues>
@@ -1002,16 +1061,17 @@
           <attvalue for="locations" value="Coruscant"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="2"/>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="4.0"/>
         </attvalues>
-        <viz:size value="1.2275449"/>
-        <viz:position x="-4.9778676" y="18.669043"/>
-        <viz:color r="0" g="196" b="255"/>
+        <viz:size value="15.703125"/>
+        <viz:position x="204.12158" y="876.9376"/>
+        <viz:color r="255" g="83" b="26"/>
       </node>
       <node id="55" label="general grievous">
         <attvalues>
@@ -1020,16 +1080,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Droid"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="3"/>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="4.0"/>
         </attvalues>
-        <viz:size value="2.1377244"/>
-        <viz:position x="-43.79155" y="32.212154"/>
-        <viz:color r="192" g="192" b="192"/>
+        <viz:size value="15.703125"/>
+        <viz:position x="1117.8774" y="1782.2045"/>
+        <viz:color r="0" g="172" b="163"/>
       </node>
       <node id="56" label="fang zar">
         <attvalues>
@@ -1038,16 +1099,17 @@
           <attvalue for="locations" value="Coruscant"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="4"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="7.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="31.926239" y="11.011486"/>
-        <viz:color r="0" g="196" b="255"/>
+        <viz:size value="16.230469"/>
+        <viz:position x="-145.68861" y="-468.70413"/>
+        <viz:color r="255" g="83" b="26"/>
       </node>
       <node id="57" label="mon mothma">
         <attvalues>
@@ -1056,16 +1118,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="10"/>
+          <attvalue for="degree" value="10"/>
+          <attvalue for="weighted degree" value="13.0"/>
         </attvalues>
-        <viz:size value="1.2275449"/>
-        <viz:position x="71.85297" y="20.42604"/>
-        <viz:color r="0" g="196" b="255"/>
+        <viz:size value="17.285156"/>
+        <viz:position x="-802.6356" y="-694.5722"/>
+        <viz:color r="255" g="83" b="26"/>
       </node>
       <node id="58" label="giddean danu">
         <attvalues>
@@ -1074,16 +1137,17 @@
           <attvalue for="locations" value="Coruscant"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="4"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="4.0"/>
         </attvalues>
-        <viz:size value="1.0"/>
-        <viz:position x="30.577324" y="15.666439"/>
-        <viz:color r="0" g="196" b="255"/>
+        <viz:size value="15.703125"/>
+        <viz:position x="-145.69112" y="-288.08844"/>
+        <viz:color r="255" g="83" b="26"/>
       </node>
       <node id="59" label="clone commander gree">
         <attvalues>
@@ -1092,16 +1156,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="1"/>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="1.0"/>
         </attvalues>
-        <viz:size value="1.2275449"/>
-        <viz:position x="-24.870024" y="48.08311"/>
-        <viz:color r="0" g="196" b="255"/>
+        <viz:size value="15.175781"/>
+        <viz:position x="15.830839" y="488.24704"/>
+        <viz:color r="255" g="83" b="26"/>
       </node>
       <node id="60" label="clone commander cody">
         <attvalues>
@@ -1110,16 +1175,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="4"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="5.0"/>
         </attvalues>
-        <viz:size value="1.2275449"/>
-        <viz:position x="-21.090504" y="21.105688"/>
-        <viz:color r="0" g="196" b="255"/>
+        <viz:size value="15.878906"/>
+        <viz:position x="567.1013" y="876.9332"/>
+        <viz:color r="255" g="83" b="26"/>
       </node>
       <node id="61" label="tion medon">
         <attvalues>
@@ -1128,16 +1194,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Other"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="1"/>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="1.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="-11.127749" y="61.35103"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="15.175781"/>
+        <viz:position x="-132.07898" y="1929.4431"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="62" label="captain antilles">
         <attvalues>
@@ -1146,16 +1213,17 @@
           <attvalue for="locations" value="Alderaan"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="2"/>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="3.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="38.400948" y="19.700375"/>
-        <viz:color r="115" g="192" b="0"/>
+        <viz:size value="15.527344"/>
+        <viz:position x="-278.9359" y="110.05442"/>
+        <viz:color r="230" g="96" b="230"/>
       </node>
       <node id="63" label="darth vader">
         <attvalues>
@@ -1164,16 +1232,17 @@
           <attvalue for="locations" value="Death Star"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="15"/>
+          <attvalue for="degree" value="15"/>
+          <attvalue for="weighted degree" value="48.0"/>
         </attvalues>
-        <viz:size value="7.371258"/>
-        <viz:position x="66.97127" y="51.352966"/>
-        <viz:color r="192" g="192" b="192"/>
+        <viz:size value="23.4375"/>
+        <viz:position x="-1342.2185" y="956.15857"/>
+        <viz:color r="109" g="159" b="0"/>
       </node>
       <node id="64" label="luke">
         <attvalues>
@@ -1182,16 +1251,17 @@
           <attvalue for="locations" value="Tatooine"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="24"/>
+          <attvalue for="degree" value="24"/>
+          <attvalue for="weighted degree" value="174.0"/>
         </attvalues>
-        <viz:size value="18.976048"/>
-        <viz:position x="82.1489" y="-8.860842"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="45.585938"/>
+        <viz:position x="-565.7256" y="-1497.0055"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="65" label="camie">
         <attvalues>
@@ -1200,16 +1270,17 @@
           <attvalue for="locations" value="Tatooine"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="2"/>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="4.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="107.57133" y="-26.572887"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="15.703125"/>
+        <viz:position x="-652.7019" y="-2545.5557"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="66" label="biggs">
         <attvalues>
@@ -1218,16 +1289,17 @@
           <attvalue for="locations" value="Tatooine"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="7"/>
+          <attvalue for="degree" value="7"/>
+          <attvalue for="weighted degree" value="14.0"/>
         </attvalues>
-        <viz:size value="2.8203592"/>
-        <viz:position x="113.63186" y="-13.198727"/>
-        <viz:color r="115" g="192" b="0"/>
+        <viz:size value="17.460938"/>
+        <viz:position x="-905.0232" y="-2434.1792"/>
+        <viz:color r="230" g="96" b="230"/>
       </node>
       <node id="67" label="leia">
         <attvalues>
@@ -1236,16 +1308,17 @@
           <attvalue for="locations" value="Alderaan"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="21"/>
+          <attvalue for="degree" value="21"/>
+          <attvalue for="weighted degree" value="183.0"/>
         </attvalues>
-        <viz:size value="11.922156"/>
-        <viz:position x="102.680786" y="31.35933"/>
-        <viz:color r="115" g="192" b="0"/>
+        <viz:size value="47.16797"/>
+        <viz:position x="-1669.9545" y="195.07635"/>
+        <viz:color r="230" g="96" b="230"/>
       </node>
       <node id="68" label="motti">
         <attvalues>
@@ -1254,16 +1327,17 @@
           <attvalue for="locations" value="Death Star"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="3"/>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="4.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="95.433815" y="61.074924"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="15.703125"/>
+        <viz:position x="-1794.5684" y="1005.4763"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="69" label="tarkin">
         <attvalues>
@@ -1272,16 +1346,17 @@
           <attvalue for="locations" value="Death Star"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="1"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="3"/>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="10.0"/>
         </attvalues>
-        <viz:size value="2.1377244"/>
-        <viz:position x="93.03459" y="64.36025"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="16.757812"/>
+        <viz:position x="-1705.0479" y="835.1217"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="70" label="han">
         <attvalues>
@@ -1290,16 +1365,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="23"/>
+          <attvalue for="degree" value="23"/>
+          <attvalue for="weighted degree" value="256.0"/>
         </attvalues>
-        <viz:size value="20.0"/>
-        <viz:position x="118.89988" y="35.220116"/>
-        <viz:color r="115" g="192" b="0"/>
+        <viz:size value="60.0"/>
+        <viz:position x="-1834.4797" y="-487.4434"/>
+        <viz:color r="230" g="96" b="230"/>
       </node>
       <node id="71" label="dodonna">
         <attvalues>
@@ -1308,16 +1384,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="3"/>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="3.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="123.224884" y="-35.82915"/>
-        <viz:color r="115" g="192" b="0"/>
+        <viz:size value="15.527344"/>
+        <viz:position x="-1061.4756" y="-1980.7964"/>
+        <viz:color r="230" g="96" b="230"/>
       </node>
       <node id="72" label="gold leader">
         <attvalues>
@@ -1326,16 +1403,17 @@
           <attvalue for="locations" value="Death Star"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="5"/>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="5.0"/>
         </attvalues>
-        <viz:size value="2.3652697"/>
-        <viz:position x="121.92465" y="-30.26604"/>
-        <viz:color r="115" g="192" b="0"/>
+        <viz:size value="15.878906"/>
+        <viz:position x="-1078.7858" y="-2206.7883"/>
+        <viz:color r="230" g="96" b="230"/>
       </node>
       <node id="73" label="wedge">
         <attvalues>
@@ -1344,16 +1422,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="8"/>
+          <attvalue for="degree" value="8"/>
+          <attvalue for="weighted degree" value="20.0"/>
         </attvalues>
-        <viz:size value="3.9580839"/>
-        <viz:position x="128.5117" y="-19.836256"/>
-        <viz:color r="115" g="192" b="0"/>
+        <viz:size value="18.515625"/>
+        <viz:position x="-1287.5126" y="-2079.9517"/>
+        <viz:color r="230" g="96" b="230"/>
       </node>
       <node id="74" label="red leader">
         <attvalues>
@@ -1362,16 +1441,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="7"/>
+          <attvalue for="degree" value="7"/>
+          <attvalue for="weighted degree" value="13.0"/>
         </attvalues>
-        <viz:size value="4.526946"/>
-        <viz:position x="110.145645" y="-18.53614"/>
-        <viz:color r="115" g="192" b="0"/>
+        <viz:size value="17.285156"/>
+        <viz:position x="-794.7902" y="-2194.4412"/>
+        <viz:color r="230" g="96" b="230"/>
       </node>
       <node id="75" label="red ten">
         <attvalues>
@@ -1380,16 +1460,17 @@
           <attvalue for="locations" value="Death Star"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="2"/>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="2.0"/>
         </attvalues>
-        <viz:size value="1.6826348"/>
-        <viz:position x="104.5091" y="-31.886415"/>
-        <viz:color r="115" g="192" b="0"/>
+        <viz:size value="15.3515625"/>
+        <viz:position x="-548.15094" y="-2195.5771"/>
+        <viz:color r="230" g="96" b="230"/>
       </node>
       <node id="76" label="gold five">
         <attvalues>
@@ -1398,16 +1479,17 @@
           <attvalue for="locations" value="Death Star"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="0"/>
+          <attvalue for="degree" value="0"/>
+          <attvalue for="weighted degree" value="0.0"/>
         </attvalues>
-        <viz:size value="1.6826348"/>
-        <viz:position x="317.3249" y="-648.96326"/>
-        <viz:color r="115" g="192" b="0"/>
+        <viz:size value="15.0"/>
+        <viz:position x="-1284.5425" y="-2603.5237"/>
+        <viz:color r="230" g="96" b="230"/>
       </node>
       <node id="77" label="rieekan">
         <attvalues>
@@ -1416,16 +1498,17 @@
           <attvalue for="locations" value="Alderaan"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="3"/>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="8.0"/>
         </attvalues>
-        <viz:size value="1.5688622"/>
-        <viz:position x="100.11677" y="40.785778"/>
-        <viz:color r="115" g="192" b="0"/>
+        <viz:size value="16.40625"/>
+        <viz:position x="-1542.4762" y="-106.435776"/>
+        <viz:color r="230" g="96" b="230"/>
       </node>
       <node id="78" label="derlin">
         <attvalues>
@@ -1434,16 +1517,17 @@
           <attvalue for="locations" value="Hoth"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="2"/>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="2.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="87.71644" y="28.697876"/>
-        <viz:color r="115" g="192" b="0"/>
+        <viz:size value="15.3515625"/>
+        <viz:position x="-1213.0002" y="285.52994"/>
+        <viz:color r="230" g="96" b="230"/>
       </node>
       <node id="79" label="zev">
         <attvalues>
@@ -1452,16 +1536,17 @@
           <attvalue for="locations" value="Hoth"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="2"/>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="2.0"/>
         </attvalues>
-        <viz:size value="1.4550898"/>
-        <viz:position x="114.04759" y="7.160828"/>
-        <viz:color r="115" g="192" b="0"/>
+        <viz:size value="15.3515625"/>
+        <viz:position x="-1575.4275" y="-1623.3662"/>
+        <viz:color r="230" g="96" b="230"/>
       </node>
       <node id="80" label="piett">
         <attvalues>
@@ -1470,16 +1555,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="4"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="12.0"/>
         </attvalues>
-        <viz:size value="2.1377244"/>
-        <viz:position x="68.025185" y="85.23764"/>
-        <viz:color r="211" g="179" b="176"/>
+        <viz:size value="17.109375"/>
+        <viz:position x="-1337.5383" y="1377.6481"/>
+        <viz:color r="167" g="114" b="0"/>
       </node>
       <node id="81" label="ozzel">
         <attvalues>
@@ -1488,16 +1574,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="2"/>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="4.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="74.219864" y="85.58093"/>
-        <viz:color r="211" g="179" b="176"/>
+        <viz:size value="15.703125"/>
+        <viz:position x="-1478.163" y="1520.9445"/>
+        <viz:color r="167" g="114" b="0"/>
       </node>
       <node id="82" label="dack">
         <attvalues>
@@ -1506,16 +1593,17 @@
           <attvalue for="locations" value="Hoth"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="1"/>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="3.0"/>
         </attvalues>
-        <viz:size value="1.2275449"/>
-        <viz:position x="92.58042" y="-31.734459"/>
-        <viz:color r="115" g="192" b="0"/>
+        <viz:size value="15.527344"/>
+        <viz:position x="-492.8812" y="-1788.2507"/>
+        <viz:color r="230" g="96" b="230"/>
       </node>
       <node id="83" label="janson">
         <attvalues>
@@ -1524,16 +1612,17 @@
           <attvalue for="locations" value="Hoth"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="1"/>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="2.0"/>
         </attvalues>
-        <viz:size value="1.2275449"/>
-        <viz:position x="148.41745" y="-34.67736"/>
-        <viz:color r="115" g="192" b="0"/>
+        <viz:size value="15.3515625"/>
+        <viz:position x="-1472.1736" y="-2242.5344"/>
+        <viz:color r="230" g="96" b="230"/>
       </node>
       <node id="84" label="needa">
         <attvalues>
@@ -1542,16 +1631,17 @@
           <attvalue for="locations" value="Hoth"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="2"/>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="2.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="70.678055" y="89.87736"/>
-        <viz:color r="211" g="179" b="176"/>
+        <viz:size value="15.3515625"/>
+        <viz:position x="-1510.482" y="1296.5715"/>
+        <viz:color r="167" g="114" b="0"/>
       </node>
       <node id="85" label="lando">
         <attvalues>
@@ -1560,16 +1650,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="9"/>
+          <attvalue for="degree" value="9"/>
+          <attvalue for="weighted degree" value="56.0"/>
         </attvalues>
-        <viz:size value="5.4371257"/>
-        <viz:position x="97.91358" y="20.118608"/>
-        <viz:color r="115" g="192" b="0"/>
+        <viz:size value="24.84375"/>
+        <viz:position x="-1295.0979" y="-568.6328"/>
+        <viz:color r="230" g="96" b="230"/>
       </node>
       <node id="86" label="jerjerrod">
         <attvalues>
@@ -1578,16 +1669,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="1"/>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="1.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="72.36397" y="73.609116"/>
-        <viz:color r="211" g="179" b="176"/>
+        <viz:size value="15.175781"/>
+        <viz:position x="-1534.8253" y="1122.0461"/>
+        <viz:color r="167" g="114" b="0"/>
       </node>
       <node id="87" label="bib fortuna">
         <attvalues>
@@ -1596,16 +1688,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Twi'lek"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="3"/>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="4.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="67.04162" y="-22.731417"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="15.703125"/>
+        <viz:position x="8.680093" y="-1873.1752"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="88" label="boushh">
         <attvalues>
@@ -1614,16 +1707,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="4"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="5.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="88.62051" y="10.816163"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="15.878906"/>
+        <viz:position x="-1137.5258" y="-231.08083"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="89" label="admiral ackbar">
         <attvalues>
@@ -1632,16 +1726,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Other"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="11"/>
+          <attvalue for="degree" value="11"/>
+          <attvalue for="weighted degree" value="18.0"/>
         </attvalues>
-        <viz:size value="2.1377244"/>
-        <viz:position x="127.69289" y="19.16588"/>
-        <viz:color r="115" g="192" b="0"/>
+        <viz:size value="18.164062"/>
+        <viz:position x="-1601.1396" y="-891.546"/>
+        <viz:color r="230" g="96" b="230"/>
       </node>
       <node id="90" label="lor san tekka">
         <attvalues>
@@ -1650,16 +1745,17 @@
           <attvalue for="locations" value="Jakku"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="3"/>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="5.0"/>
         </attvalues>
-        <viz:size value="1.2275449"/>
-        <viz:position x="203.37495" y="40.55654"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="15.878906"/>
+        <viz:position x="-3197.7498" y="-439.1361"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="91" label="poe">
         <attvalues>
@@ -1668,16 +1764,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="14"/>
+          <attvalue for="degree" value="14"/>
+          <attvalue for="weighted degree" value="36.0"/>
         </attvalues>
-        <viz:size value="4.185629"/>
-        <viz:position x="173.24237" y="44.004013"/>
-        <viz:color r="76" g="70" b="62"/>
+        <viz:size value="21.328125"/>
+        <viz:position x="-2910.019" y="-29.372229"/>
+        <viz:color r="0" g="169" b="239"/>
       </node>
       <node id="92" label="kylo ren">
         <attvalues>
@@ -1686,16 +1783,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="9"/>
+          <attvalue for="degree" value="9"/>
+          <attvalue for="weighted degree" value="22.0"/>
         </attvalues>
-        <viz:size value="3.275449"/>
-        <viz:position x="202.22148" y="48.171833"/>
-        <viz:color r="255" g="85" b="132"/>
+        <viz:size value="18.867188"/>
+        <viz:position x="-3090.3477" y="-767.51447"/>
+        <viz:color r="96" g="121" b="194"/>
       </node>
       <node id="93" label="captain phasma">
         <attvalues>
@@ -1704,16 +1802,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="6"/>
+          <attvalue for="degree" value="6"/>
+          <attvalue for="weighted degree" value="9.0"/>
         </attvalues>
-        <viz:size value="1.4550898"/>
-        <viz:position x="191.5039" y="42.31418"/>
-        <viz:color r="255" g="85" b="132"/>
+        <viz:size value="16.582031"/>
+        <viz:position x="-2972.8567" y="-514.4819"/>
+        <viz:color r="96" g="121" b="194"/>
       </node>
       <node id="94" label="finn">
         <attvalues>
@@ -1722,16 +1821,17 @@
           <attvalue for="locations" value="Jakku"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="12"/>
+          <attvalue for="degree" value="12"/>
+          <attvalue for="weighted degree" value="78.0"/>
         </attvalues>
-        <viz:size value="7.9401197"/>
-        <viz:position x="155.53445" y="44.548595"/>
-        <viz:color r="76" g="70" b="62"/>
+        <viz:size value="28.710938"/>
+        <viz:position x="-2480.004" y="-553.1253"/>
+        <viz:color r="0" g="169" b="239"/>
       </node>
       <node id="95" label="unkar plutt">
         <attvalues>
@@ -1740,16 +1840,17 @@
           <attvalue for="locations" value="Jakku"/>
           <attvalue for="species.droids" value="Other"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="1"/>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="2.0"/>
         </attvalues>
-        <viz:size value="1.3413174"/>
-        <viz:position x="191.3734" y="83.05641"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="15.3515625"/>
+        <viz:position x="-2729.544" y="-1205.5885"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="96" label="rey">
         <attvalues>
@@ -1758,16 +1859,17 @@
           <attvalue for="locations" value="Jakku"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="7"/>
+          <attvalue for="degree" value="7"/>
+          <attvalue for="weighted degree" value="56.0"/>
         </attvalues>
-        <viz:size value="7.1437125"/>
-        <viz:position x="175.78561" y="68.05867"/>
-        <viz:color r="76" g="70" b="62"/>
+        <viz:size value="24.84375"/>
+        <viz:position x="-2621.337" y="-1049.4987"/>
+        <viz:color r="0" g="169" b="239"/>
       </node>
       <node id="97" label="general hux">
         <attvalues>
@@ -1776,16 +1878,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="5"/>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="11.0"/>
         </attvalues>
-        <viz:size value="2.3652697"/>
-        <viz:position x="236.78725" y="48.329414"/>
-        <viz:color r="255" g="85" b="132"/>
+        <viz:size value="16.933594"/>
+        <viz:position x="-3475.1992" y="-901.2313"/>
+        <viz:color r="96" g="121" b="194"/>
       </node>
       <node id="98" label="lieutenant mitaka">
         <attvalues>
@@ -1794,16 +1897,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="2"/>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="3.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="233.94473" y="53.69973"/>
-        <viz:color r="255" g="85" b="132"/>
+        <viz:size value="15.527344"/>
+        <viz:position x="-3333.9626" y="-764.7561"/>
+        <viz:color r="96" g="121" b="194"/>
       </node>
       <node id="99" label="bala-tik">
         <attvalues>
@@ -1812,16 +1916,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="3"/>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="4.0"/>
         </attvalues>
-        <viz:size value="1.2275449"/>
-        <viz:position x="160.38335" y="58.34093"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="15.703125"/>
+        <viz:position x="-2396.842" y="-809.7066"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="100" label="snoke">
         <attvalues>
@@ -1830,16 +1935,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Unknown"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="1"/>
           <attvalue for="episode5" value="1"/>
           <attvalue for="episode6" value="1"/>
-          <attvalue for="weighted degree" value="2"/>
+          <attvalue for="degree" value="2"/>
+          <attvalue for="weighted degree" value="5.0"/>
         </attvalues>
-        <viz:size value="1.2275449"/>
-        <viz:position x="231.74088" y="46.291935"/>
-        <viz:color r="223" g="137" b="255"/>
+        <viz:size value="15.878906"/>
+        <viz:position x="-3292.9597" y="-1013.9756"/>
+        <viz:color r="0" g="172" b="59"/>
       </node>
       <node id="101" label="maz">
         <attvalues>
@@ -1848,16 +1954,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Other"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="3"/>
+          <attvalue for="degree" value="3"/>
+          <attvalue for="weighted degree" value="8.0"/>
         </attvalues>
-        <viz:size value="1.4550898"/>
-        <viz:position x="156.88025" y="61.821"/>
-        <viz:color r="76" g="70" b="62"/>
+        <viz:size value="16.40625"/>
+        <viz:position x="-2345.4238" y="-1009.9692"/>
+        <viz:color r="0" g="169" b="239"/>
       </node>
       <node id="102" label="bb-8">
         <attvalues>
@@ -1866,16 +1973,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Droid"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="1"/>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="1.0"/>
         </attvalues>
-        <viz:size value="1.0"/>
-        <viz:position x="188.14037" y="85.67887"/>
-        <viz:color r="76" g="70" b="62"/>
+        <viz:size value="15.175781"/>
+        <viz:position x="-2531.1" y="-1225.2891"/>
+        <viz:color r="0" g="169" b="239"/>
       </node>
       <node id="103" label="snap">
         <attvalues>
@@ -1884,16 +1992,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="8"/>
+          <attvalue for="degree" value="8"/>
+          <attvalue for="weighted degree" value="9.0"/>
         </attvalues>
-        <viz:size value="1.3413174"/>
-        <viz:position x="145.58006" y="37.027714"/>
-        <viz:color r="76" g="70" b="62"/>
+        <viz:size value="16.582031"/>
+        <viz:position x="-2235.4949" y="60.55674"/>
+        <viz:color r="0" g="169" b="239"/>
       </node>
       <node id="104" label="admiral statura">
         <attvalues>
@@ -1902,16 +2011,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="7"/>
+          <attvalue for="degree" value="7"/>
+          <attvalue for="weighted degree" value="9.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="137.25871" y="33.50019"/>
-        <viz:color r="76" g="70" b="62"/>
+        <viz:size value="16.582031"/>
+        <viz:position x="-2350.525" y="-193.03474"/>
+        <viz:color r="0" g="169" b="239"/>
       </node>
       <node id="105" label="yolo ziff">
         <attvalues>
@@ -1920,16 +2030,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="4"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="4.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="214.0464" y="66.63544"/>
-        <viz:color r="76" g="70" b="62"/>
+        <viz:size value="15.703125"/>
+        <viz:position x="-3434.0808" y="275.95227"/>
+        <viz:color r="0" g="169" b="239"/>
       </node>
       <node id="106" label="colonel datoo">
         <attvalues>
@@ -1938,16 +2049,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="1"/>
+          <attvalue for="degree" value="1"/>
+          <attvalue for="weighted degree" value="1.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="256.07486" y="50.18393"/>
-        <viz:color r="255" g="85" b="132"/>
+        <viz:size value="15.175781"/>
+        <viz:position x="-3634.1846" y="-938.1348"/>
+        <viz:color r="96" g="121" b="194"/>
       </node>
       <node id="107" label="ello asty">
         <attvalues>
@@ -1956,16 +2068,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Other"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="4"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="8.0"/>
         </attvalues>
-        <viz:size value="1.2275449"/>
-        <viz:position x="212.05153" y="61.926888"/>
-        <viz:color r="76" g="70" b="62"/>
+        <viz:size value="16.40625"/>
+        <viz:position x="-3512.983" y="461.9498"/>
+        <viz:color r="0" g="169" b="239"/>
       </node>
       <node id="108" label="jess">
         <attvalues>
@@ -1974,16 +2087,17 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="5"/>
+          <attvalue for="degree" value="5"/>
+          <attvalue for="weighted degree" value="8.0"/>
         </attvalues>
-        <viz:size value="1.2275449"/>
-        <viz:position x="199.68944" y="61.437874"/>
-        <viz:color r="76" g="70" b="62"/>
+        <viz:size value="16.40625"/>
+        <viz:position x="-3175.2295" y="283.44305"/>
+        <viz:color r="0" g="169" b="239"/>
       </node>
       <node id="109" label="niv lek">
         <attvalues>
@@ -1992,2008 +2106,1226 @@
           <attvalue for="locations" value="Other"/>
           <attvalue for="species.droids" value="Human"/>
           <attvalue for="episode1" value="0"/>
-          <attvalue for="episode2" value="[false]"/>
+          <attvalue for="episode2" value="0"/>
           <attvalue for="episode3" value="0"/>
           <attvalue for="episode4" value="0"/>
           <attvalue for="episode5" value="0"/>
           <attvalue for="episode6" value="0"/>
-          <attvalue for="weighted degree" value="4"/>
+          <attvalue for="degree" value="4"/>
+          <attvalue for="weighted degree" value="7.0"/>
         </attvalues>
-        <viz:size value="1.1137725"/>
-        <viz:position x="209.09355" y="67.8827"/>
-        <viz:color r="76" g="70" b="62"/>
+        <viz:size value="16.230469"/>
+        <viz:position x="-3304.939" y="468.67706"/>
+        <viz:color r="0" g="169" b="239"/>
+      </node>
+      <node id="110" label="r2-d2">
+        <attvalues>
+          <attvalue for="scenes" value="49"/>
+          <attvalue for="affiliations" value="The Resistance"/>
+          <attvalue for="locations" value="Tatooine"/>
+          <attvalue for="species.droids" value="Droid"/>
+          <attvalue for="degree" value="0"/>
+          <attvalue for="weighted degree" value="0.0"/>
+        </attvalues>
+        <viz:size value="15.0"/>
+        <viz:position x="-1028.8317" y="-2868.8013"/>
+        <viz:color r="0" g="169" b="239"/>
       </node>
     </nodes>
     <edges>
       <edge id="398" source="1" target="0">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="399" source="2" target="3">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="400" source="4" target="3">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="401" source="0" target="3">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="402" source="4" target="0">
-        <attvalues>
-          <attvalue for="value" value="26"/>
-        </attvalues>
+      <edge id="402" source="4" target="0" weight="26.0">
+        <attvalues/>
       </edge>
       <edge id="403" source="1" target="3">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="404" source="5" target="1">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="405" source="5" target="3">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="406" source="1" target="6">
-        <attvalues>
-          <attvalue for="value" value="8"/>
-        </attvalues>
+      <edge id="406" source="1" target="6" weight="8.0">
+        <attvalues/>
       </edge>
-      <edge id="407" source="6" target="7">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="407" source="6" target="7" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="408" source="1" target="7">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="409" source="9" target="8">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="409" source="9" target="8" weight="3.0">
+        <attvalues/>
       </edge>
       <edge id="410" source="8" target="10">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="411" source="9" target="10">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="411" source="9" target="10" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="412" source="11" target="0">
-        <attvalues>
-          <attvalue for="value" value="22"/>
-        </attvalues>
+      <edge id="412" source="11" target="0" weight="22.0">
+        <attvalues/>
       </edge>
-      <edge id="413" source="11" target="4">
-        <attvalues>
-          <attvalue for="value" value="15"/>
-        </attvalues>
+      <edge id="413" source="11" target="4" weight="15.0">
+        <attvalues/>
       </edge>
-      <edge id="414" source="11" target="12">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="414" source="11" target="12" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="415" source="13" target="0">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="415" source="13" target="0" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="416" source="13" target="4">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="416" source="13" target="4" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="417" source="13" target="11">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="417" source="13" target="11" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="418" source="8" target="1">
-        <attvalues>
-          <attvalue for="value" value="6"/>
-        </attvalues>
+      <edge id="418" source="8" target="1" weight="6.0">
+        <attvalues/>
       </edge>
-      <edge id="419" source="8" target="6">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="419" source="8" target="6" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="420" source="1" target="10">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="420" source="1" target="10" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="421" source="11" target="10">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="422" source="9" target="11">
-        <attvalues>
-          <attvalue for="value" value="7"/>
-        </attvalues>
+      <edge id="422" source="9" target="11" weight="7.0">
+        <attvalues/>
       </edge>
-      <edge id="423" source="0" target="10">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="423" source="0" target="10" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="424" source="9" target="0">
-        <attvalues>
-          <attvalue for="value" value="9"/>
-        </attvalues>
+      <edge id="424" source="9" target="0" weight="9.0">
+        <attvalues/>
       </edge>
-      <edge id="425" source="9" target="14">
-        <attvalues>
-          <attvalue for="value" value="7"/>
-        </attvalues>
+      <edge id="425" source="9" target="14" weight="7.0">
+        <attvalues/>
       </edge>
-      <edge id="426" source="14" target="0">
-        <attvalues>
-          <attvalue for="value" value="16"/>
-        </attvalues>
+      <edge id="426" source="14" target="0" weight="16.0">
+        <attvalues/>
       </edge>
       <edge id="427" source="14" target="10">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="428" source="9" target="4">
-        <attvalues>
-          <attvalue for="value" value="7"/>
-        </attvalues>
+      <edge id="428" source="9" target="4" weight="7.0">
+        <attvalues/>
       </edge>
-      <edge id="429" source="4" target="15">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="429" source="4" target="15" weight="3.0">
+        <attvalues/>
       </edge>
       <edge id="430" source="11" target="15">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="431" source="0" target="15">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="431" source="0" target="15" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="432" source="9" target="15">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="432" source="9" target="15" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="433" source="11" target="14">
-        <attvalues>
-          <attvalue for="value" value="10"/>
-        </attvalues>
+      <edge id="433" source="11" target="14" weight="10.0">
+        <attvalues/>
       </edge>
-      <edge id="434" source="0" target="16">
-        <attvalues>
-          <attvalue for="value" value="6"/>
-        </attvalues>
+      <edge id="434" source="0" target="16" weight="6.0">
+        <attvalues/>
       </edge>
-      <edge id="435" source="17" target="16">
-        <attvalues>
-          <attvalue for="value" value="5"/>
-        </attvalues>
+      <edge id="435" source="17" target="16" weight="5.0">
+        <attvalues/>
       </edge>
-      <edge id="436" source="14" target="16">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="436" source="14" target="16" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="437" source="17" target="0">
-        <attvalues>
-          <attvalue for="value" value="22"/>
-        </attvalues>
+      <edge id="437" source="17" target="0" weight="22.0">
+        <attvalues/>
       </edge>
-      <edge id="438" source="17" target="14">
-        <attvalues>
-          <attvalue for="value" value="41"/>
-        </attvalues>
+      <edge id="438" source="17" target="14" weight="41.0">
+        <attvalues/>
       </edge>
-      <edge id="439" source="11" target="18">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="439" source="11" target="18" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="440" source="17" target="18">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="440" source="17" target="18" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="441" source="0" target="18">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="441" source="0" target="18" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="442" source="14" target="18">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="442" source="14" target="18" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="443" source="17" target="11">
-        <attvalues>
-          <attvalue for="value" value="12"/>
-        </attvalues>
+      <edge id="443" source="17" target="11" weight="12.0">
+        <attvalues/>
       </edge>
-      <edge id="444" source="17" target="19">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="444" source="17" target="19" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="445" source="19" target="0">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="445" source="19" target="0" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="446" source="19" target="14">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="447" source="17" target="20">
-        <attvalues>
-          <attvalue for="value" value="8"/>
-        </attvalues>
+      <edge id="447" source="17" target="20" weight="8.0">
+        <attvalues/>
       </edge>
-      <edge id="448" source="11" target="20">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="448" source="11" target="20" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="449" source="0" target="20">
-        <attvalues>
-          <attvalue for="value" value="8"/>
-        </attvalues>
+      <edge id="449" source="0" target="20" weight="8.0">
+        <attvalues/>
       </edge>
-      <edge id="450" source="14" target="20">
-        <attvalues>
-          <attvalue for="value" value="5"/>
-        </attvalues>
+      <edge id="450" source="14" target="20" weight="5.0">
+        <attvalues/>
       </edge>
-      <edge id="451" source="17" target="21">
-        <attvalues>
-          <attvalue for="value" value="10"/>
-        </attvalues>
+      <edge id="451" source="17" target="21" weight="10.0">
+        <attvalues/>
       </edge>
-      <edge id="452" source="21" target="14">
-        <attvalues>
-          <attvalue for="value" value="12"/>
-        </attvalues>
+      <edge id="452" source="21" target="14" weight="12.0">
+        <attvalues/>
       </edge>
       <edge id="453" source="4" target="10">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="454" source="22" target="8">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="454" source="22" target="8" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="455" source="17" target="23">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="455" source="17" target="23" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="456" source="17" target="24">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="456" source="17" target="24" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="457" source="23" target="24">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="458" source="11" target="23">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="459" source="23" target="0">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="459" source="23" target="0" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="460" source="11" target="24">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="461" source="0" target="24">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="461" source="0" target="24" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="462" source="17" target="4">
-        <attvalues>
-          <attvalue for="value" value="46"/>
-        </attvalues>
+      <edge id="462" source="17" target="4" weight="46.0">
+        <attvalues/>
       </edge>
       <edge id="463" source="4" target="20">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="464" source="21" target="16">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="465" source="23" target="16">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="466" source="21" target="0">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="467" source="21" target="23">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="468" source="23" target="14">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="469" source="25" target="26">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="470" source="26" target="20">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="471" source="18" target="20">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="472" source="17" target="26">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="473" source="26" target="11">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="474" source="26" target="14">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="475" source="26" target="18">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="476" source="26" target="0">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="477" source="25" target="11">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="477" source="25" target="11" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="478" source="25" target="14">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="479" source="27" target="0">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="480" source="17" target="27">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="481" source="27" target="24">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="482" source="23" target="20">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="483" source="17" target="9">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="483" source="17" target="9" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="484" source="17" target="15">
-        <attvalues>
-          <attvalue for="value" value="4"/>
-        </attvalues>
+      <edge id="484" source="17" target="15" weight="4.0">
+        <attvalues/>
       </edge>
-      <edge id="485" source="8" target="28">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="485" source="8" target="28" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="486" source="8" target="11">
-        <attvalues>
-          <attvalue for="value" value="5"/>
-        </attvalues>
+      <edge id="486" source="8" target="11" weight="5.0">
+        <attvalues/>
       </edge>
       <edge id="487" source="8" target="0">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="488" source="11" target="28">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="489" source="0" target="28">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="490" source="29" target="0">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="490" source="29" target="0" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="491" source="30" target="0">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="491" source="30" target="0" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="492" source="0" target="31">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="492" source="0" target="31" weight="3.0">
+        <attvalues/>
       </edge>
       <edge id="493" source="0" target="32">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="494" source="30" target="29">
-        <attvalues>
-          <attvalue for="value" value="4"/>
-        </attvalues>
+      <edge id="494" source="30" target="29" weight="4.0">
+        <attvalues/>
       </edge>
-      <edge id="495" source="29" target="31">
-        <attvalues>
-          <attvalue for="value" value="16"/>
-        </attvalues>
+      <edge id="495" source="29" target="31" weight="16.0">
+        <attvalues/>
       </edge>
-      <edge id="496" source="17" target="29">
-        <attvalues>
-          <attvalue for="value" value="9"/>
-        </attvalues>
+      <edge id="496" source="17" target="29" weight="9.0">
+        <attvalues/>
       </edge>
       <edge id="497" source="29" target="32">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="498" source="30" target="31">
-        <attvalues>
-          <attvalue for="value" value="4"/>
-        </attvalues>
+      <edge id="498" source="30" target="31" weight="4.0">
+        <attvalues/>
       </edge>
-      <edge id="499" source="17" target="30">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="499" source="17" target="30" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="500" source="30" target="32">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="501" source="17" target="31">
-        <attvalues>
-          <attvalue for="value" value="9"/>
-        </attvalues>
+      <edge id="501" source="17" target="31" weight="9.0">
+        <attvalues/>
       </edge>
       <edge id="502" source="32" target="31">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="503" source="17" target="32">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="504" source="33" target="8">
-        <attvalues>
-          <attvalue for="value" value="6"/>
-        </attvalues>
+      <edge id="504" source="33" target="8" weight="6.0">
+        <attvalues/>
       </edge>
       <edge id="505" source="33" target="28">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="506" source="4" target="31">
-        <attvalues>
-          <attvalue for="value" value="20"/>
-        </attvalues>
+      <edge id="506" source="4" target="31" weight="20.0">
+        <attvalues/>
       </edge>
-      <edge id="507" source="29" target="4">
-        <attvalues>
-          <attvalue for="value" value="9"/>
-        </attvalues>
+      <edge id="507" source="29" target="4" weight="9.0">
+        <attvalues/>
       </edge>
       <edge id="508" source="30" target="4">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="509" source="13" target="14">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="509" source="13" target="14" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="510" source="22" target="1">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="510" source="22" target="1" weight="3.0">
+        <attvalues/>
       </edge>
       <edge id="511" source="17" target="13">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="512" source="13" target="9">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="513" source="4" target="14">
-        <attvalues>
-          <attvalue for="value" value="9"/>
-        </attvalues>
+      <edge id="513" source="4" target="14" weight="9.0">
+        <attvalues/>
       </edge>
       <edge id="514" source="8" target="34">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="515" source="34" target="1">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="516" source="22" target="34">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="517" source="22" target="6">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="518" source="35" target="15">
-        <attvalues>
-          <attvalue for="value" value="4"/>
-        </attvalues>
+      <edge id="518" source="35" target="15" weight="4.0">
+        <attvalues/>
       </edge>
-      <edge id="519" source="17" target="35">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="519" source="17" target="35" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="520" source="34" target="11">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="521" source="1" target="14">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="521" source="1" target="14" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="522" source="5" target="7">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="523" source="36" target="35">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="523" source="36" target="35" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="524" source="36" target="15">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="524" source="36" target="15" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="525" source="17" target="36">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="526" source="8" target="14">
-        <attvalues>
-          <attvalue for="value" value="5"/>
-        </attvalues>
+      <edge id="526" source="8" target="14" weight="5.0">
+        <attvalues/>
       </edge>
-      <edge id="527" source="8" target="38">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="527" source="8" target="38" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="528" source="8" target="39">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="528" source="8" target="39" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="529" source="39" target="38">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="530" source="8" target="29">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="530" source="8" target="29" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="531" source="8" target="31">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="531" source="8" target="31" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="532" source="8" target="30">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="533" source="33" target="29">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="533" source="33" target="29" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="534" source="33" target="31">
-        <attvalues>
-          <attvalue for="value" value="8"/>
-        </attvalues>
+      <edge id="534" source="33" target="31" weight="8.0">
+        <attvalues/>
       </edge>
       <edge id="535" source="33" target="30">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="536" source="37" target="11">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="537" source="37" target="4">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="537" source="37" target="4" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="538" source="17" target="37">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="538" source="17" target="37" weight="3.0">
+        <attvalues/>
       </edge>
       <edge id="539" source="4" target="2">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="540" source="17" target="10">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="541" source="14" target="40">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="542" source="17" target="40">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="543" source="41" target="40">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="543" source="41" target="40" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="544" source="42" target="40">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="545" source="41" target="14">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="546" source="14" target="42">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="547" source="17" target="41">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="548" source="17" target="42">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="548" source="17" target="42" weight="3.0">
+        <attvalues/>
       </edge>
       <edge id="549" source="41" target="42">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="550" source="4" target="43">
-        <attvalues>
-          <attvalue for="value" value="5"/>
-        </attvalues>
+      <edge id="550" source="4" target="43" weight="5.0">
+        <attvalues/>
       </edge>
-      <edge id="551" source="44" target="43">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="551" source="44" target="43" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="552" source="44" target="4">
-        <attvalues>
-          <attvalue for="value" value="6"/>
-        </attvalues>
+      <edge id="552" source="44" target="4" weight="6.0">
+        <attvalues/>
       </edge>
-      <edge id="553" source="45" target="43">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="553" source="45" target="43" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="554" source="45" target="46">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="554" source="45" target="46" weight="3.0">
+        <attvalues/>
       </edge>
       <edge id="555" source="45" target="4">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="556" source="46" target="43">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="557" source="46" target="4">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="558" source="21" target="47">
-        <attvalues>
-          <attvalue for="value" value="4"/>
-        </attvalues>
+      <edge id="558" source="21" target="47" weight="4.0">
+        <attvalues/>
       </edge>
-      <edge id="559" source="48" target="21">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="559" source="48" target="21" weight="3.0">
+        <attvalues/>
       </edge>
       <edge id="560" source="21" target="49">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="561" source="17" target="47">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="561" source="17" target="47" weight="3.0">
+        <attvalues/>
       </edge>
       <edge id="562" source="17" target="48">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="563" source="17" target="49">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="563" source="17" target="49" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="564" source="48" target="47">
-        <attvalues>
-          <attvalue for="value" value="4"/>
-        </attvalues>
+      <edge id="564" source="48" target="47" weight="4.0">
+        <attvalues/>
       </edge>
-      <edge id="565" source="47" target="14">
-        <attvalues>
-          <attvalue for="value" value="4"/>
-        </attvalues>
+      <edge id="565" source="47" target="14" weight="4.0">
+        <attvalues/>
       </edge>
-      <edge id="566" source="49" target="47">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="566" source="49" target="47" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="567" source="48" target="14">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="568" source="48" target="49">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="569" source="49" target="14">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="569" source="49" target="14" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="570" source="33" target="4">
-        <attvalues>
-          <attvalue for="value" value="8"/>
-        </attvalues>
+      <edge id="570" source="33" target="4" weight="8.0">
+        <attvalues/>
       </edge>
-      <edge id="571" source="8" target="4">
-        <attvalues>
-          <attvalue for="value" value="5"/>
-        </attvalues>
+      <edge id="571" source="8" target="4" weight="5.0">
+        <attvalues/>
       </edge>
       <edge id="572" source="4" target="38">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="573" source="33" target="38">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="574" source="33" target="11">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="575" source="38" target="31">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="576" source="11" target="31">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="577" source="29" target="38">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="578" source="11" target="29">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="579" source="11" target="38">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="580" source="29" target="14">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="580" source="29" target="14" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="581" source="11" target="39">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="582" source="50" target="14">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="582" source="50" target="14" weight="3.0">
+        <attvalues/>
       </edge>
       <edge id="583" source="50" target="46">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="584" source="52" target="51">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="584" source="52" target="51" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="585" source="1" target="51">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="585" source="1" target="51" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="586" source="1" target="52">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="586" source="1" target="52" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="587" source="4" target="51">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="588" source="4" target="52">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="589" source="1" target="4">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="590" source="50" target="4">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="590" source="50" target="4" weight="3.0">
+        <attvalues/>
       </edge>
       <edge id="591" source="17" target="51">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="592" source="17" target="52">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="593" source="17" target="1">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="594" source="17" target="50">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="594" source="17" target="50" weight="3.0">
+        <attvalues/>
       </edge>
       <edge id="595" source="14" target="51">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="596" source="50" target="51">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="597" source="14" target="52">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="598" source="50" target="52">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="599" source="50" target="1">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="600" source="50" target="29">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="600" source="50" target="29" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="601" source="30" target="53">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="602" source="50" target="31">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="602" source="50" target="31" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="603" source="14" target="31">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="604" source="50" target="8">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="604" source="50" target="8" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="605" source="4" target="54">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="605" source="4" target="54" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="606" source="17" target="54">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="606" source="17" target="54" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="607" source="17" target="8">
-        <attvalues>
-          <attvalue for="value" value="14"/>
-        </attvalues>
+      <edge id="607" source="17" target="8" weight="14.0">
+        <attvalues/>
       </edge>
-      <edge id="608" source="55" target="4">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="608" source="55" target="4" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="609" source="17" target="55">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="610" source="17" target="33">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="610" source="17" target="33" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="611" source="21" target="4">
-        <attvalues>
-          <attvalue for="value" value="9"/>
-        </attvalues>
+      <edge id="611" source="21" target="4" weight="9.0">
+        <attvalues/>
       </edge>
-      <edge id="612" source="21" target="8">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="612" source="21" target="8" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="613" source="33" target="21">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="613" source="33" target="21" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="614" source="33" target="14">
-        <attvalues>
-          <attvalue for="value" value="5"/>
-        </attvalues>
+      <edge id="614" source="33" target="14" weight="5.0">
+        <attvalues/>
       </edge>
-      <edge id="615" source="33" target="56">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="615" source="33" target="56" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="616" source="33" target="57">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="616" source="33" target="57" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="617" source="33" target="58">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="618" source="56" target="14">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="618" source="56" target="14" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="619" source="56" target="57">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="619" source="56" target="57" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="620" source="56" target="58">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="621" source="57" target="14">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="621" source="57" target="14" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="622" source="58" target="14">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="623" source="58" target="57">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="624" source="37" target="14">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="624" source="37" target="14" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="625" source="21" target="37">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="625" source="21" target="37" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="626" source="59" target="31">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="627" source="60" target="4">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="627" source="60" target="4" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="628" source="4" target="61">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="629" source="55" target="1">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="630" source="17" target="60">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="631" source="60" target="29">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="632" source="60" target="31">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="633" source="33" target="62">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="633" source="33" target="62" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="634" source="33" target="0">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="635" source="21" target="31">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="636" source="63" target="8">
-        <attvalues>
-          <attvalue for="value" value="7"/>
-        </attvalues>
+      <edge id="636" source="63" target="8" weight="7.0">
+        <attvalues/>
       </edge>
       <edge id="637" source="21" target="62">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="638" source="65" target="64">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="638" source="65" target="64" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="639" source="66" target="65">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="639" source="66" target="65" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="640" source="66" target="64">
-        <attvalues>
-          <attvalue for="value" value="4"/>
-        </attvalues>
+      <edge id="640" source="66" target="64" weight="4.0">
+        <attvalues/>
       </edge>
-      <edge id="641" source="63" target="67">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="641" source="63" target="67" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="642" source="48" target="64">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="642" source="48" target="64" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="643" source="64" target="47">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="643" source="64" target="47" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="644" source="21" target="64">
-        <attvalues>
-          <attvalue for="value" value="29"/>
-        </attvalues>
+      <edge id="644" source="21" target="64" weight="29.0">
+        <attvalues/>
       </edge>
-      <edge id="645" source="21" target="67">
-        <attvalues>
-          <attvalue for="value" value="49"/>
-        </attvalues>
+      <edge id="645" source="21" target="67" weight="49.0">
+        <attvalues/>
       </edge>
-      <edge id="646" source="67" target="64">
-        <attvalues>
-          <attvalue for="value" value="26"/>
-        </attvalues>
+      <edge id="646" source="67" target="64" weight="26.0">
+        <attvalues/>
       </edge>
       <edge id="647" source="48" target="67">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="648" source="64" target="4">
-        <attvalues>
-          <attvalue for="value" value="22"/>
-        </attvalues>
+      <edge id="648" source="64" target="4" weight="22.0">
+        <attvalues/>
       </edge>
       <edge id="649" source="67" target="4">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="650" source="68" target="69">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="650" source="68" target="69" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="651" source="63" target="68">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="652" source="63" target="69">
-        <attvalues>
-          <attvalue for="value" value="7"/>
-        </attvalues>
+      <edge id="652" source="63" target="69" weight="7.0">
+        <attvalues/>
       </edge>
-      <edge id="653" source="70" target="4">
-        <attvalues>
-          <attvalue for="value" value="10"/>
-        </attvalues>
+      <edge id="653" source="70" target="4" weight="10.0">
+        <attvalues/>
       </edge>
-      <edge id="654" source="70" target="64">
-        <attvalues>
-          <attvalue for="value" value="43"/>
-        </attvalues>
+      <edge id="654" source="70" target="64" weight="43.0">
+        <attvalues/>
       </edge>
       <edge id="655" source="27" target="70">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="656" source="70" target="26">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="657" source="21" target="70">
-        <attvalues>
-          <attvalue for="value" value="54"/>
-        </attvalues>
+      <edge id="657" source="21" target="70" weight="54.0">
+        <attvalues/>
       </edge>
       <edge id="658" source="67" target="68">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="659" source="67" target="69">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="660" source="70" target="67">
-        <attvalues>
-          <attvalue for="value" value="69"/>
-        </attvalues>
+      <edge id="660" source="70" target="67" weight="69.0">
+        <attvalues/>
       </edge>
       <edge id="661" source="63" target="4">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="662" source="71" target="72">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="663" source="71" target="73">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="664" source="71" target="64">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="665" source="72" target="73">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="666" source="72" target="64">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="667" source="64" target="73">
-        <attvalues>
-          <attvalue for="value" value="4"/>
-        </attvalues>
+      <edge id="667" source="64" target="73" weight="4.0">
+        <attvalues/>
       </edge>
       <edge id="668" source="66" target="67">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="669" source="67" target="74">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="670" source="64" target="74">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="670" source="64" target="74" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="671" source="66" target="74">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="671" source="66" target="74" weight="3.0">
+        <attvalues/>
       </edge>
       <edge id="672" source="66" target="21">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="673" source="21" target="74">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="674" source="74" target="73">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="674" source="74" target="73" weight="3.0">
+        <attvalues/>
       </edge>
       <edge id="675" source="72" target="74">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="676" source="66" target="73">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="676" source="66" target="73" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="677" source="74" target="75">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="678" source="66" target="72">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="679" source="64" target="75">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="680" source="70" target="77">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="680" source="70" target="77" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="681" source="67" target="77">
-        <attvalues>
-          <attvalue for="value" value="4"/>
-        </attvalues>
+      <edge id="681" source="67" target="77" weight="4.0">
+        <attvalues/>
       </edge>
       <edge id="682" source="21" target="78">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="683" source="70" target="79">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="684" source="21" target="77">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="685" source="81" target="80">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="685" source="81" target="80" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="686" source="63" target="80">
-        <attvalues>
-          <attvalue for="value" value="8"/>
-        </attvalues>
+      <edge id="686" source="63" target="80" weight="8.0">
+        <attvalues/>
       </edge>
-      <edge id="687" source="63" target="81">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="687" source="63" target="81" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="688" source="78" target="67">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="689" source="82" target="64">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="689" source="82" target="64" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="690" source="83" target="73">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="690" source="83" target="73" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="691" source="64" target="79">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="692" source="63" target="84">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="693" source="84" target="80">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="694" source="64" target="31">
-        <attvalues>
-          <attvalue for="value" value="6"/>
-        </attvalues>
+      <edge id="694" source="64" target="31" weight="6.0">
+        <attvalues/>
       </edge>
       <edge id="695" source="45" target="80">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="696" source="45" target="63">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="696" source="45" target="63" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="697" source="70" target="85">
-        <attvalues>
-          <attvalue for="value" value="12"/>
-        </attvalues>
+      <edge id="697" source="70" target="85" weight="12.0">
+        <attvalues/>
       </edge>
-      <edge id="698" source="85" target="67">
-        <attvalues>
-          <attvalue for="value" value="12"/>
-        </attvalues>
+      <edge id="698" source="85" target="67" weight="12.0">
+        <attvalues/>
       </edge>
-      <edge id="699" source="21" target="85">
-        <attvalues>
-          <attvalue for="value" value="8"/>
-        </attvalues>
+      <edge id="699" source="21" target="85" weight="8.0">
+        <attvalues/>
       </edge>
-      <edge id="700" source="63" target="85">
-        <attvalues>
-          <attvalue for="value" value="4"/>
-        </attvalues>
+      <edge id="700" source="63" target="85" weight="4.0">
+        <attvalues/>
       </edge>
-      <edge id="701" source="63" target="70">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="701" source="63" target="70" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="702" source="45" target="85">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="702" source="45" target="85" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="703" source="45" target="21">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="704" source="21" target="63">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="705" source="45" target="70">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="706" source="45" target="67">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="707" source="63" target="64">
-        <attvalues>
-          <attvalue for="value" value="7"/>
-        </attvalues>
+      <edge id="707" source="63" target="64" weight="7.0">
+        <attvalues/>
       </edge>
-      <edge id="708" source="85" target="64">
-        <attvalues>
-          <attvalue for="value" value="6"/>
-        </attvalues>
+      <edge id="708" source="85" target="64" weight="6.0">
+        <attvalues/>
       </edge>
       <edge id="709" source="63" target="86">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="710" source="87" target="21">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="710" source="87" target="21" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="711" source="21" target="26">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="711" source="21" target="26" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="712" source="26" target="64">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="712" source="26" target="64" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="713" source="88" target="26">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="714" source="88" target="21">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="714" source="88" target="21" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="715" source="88" target="70">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="716" source="88" target="67">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="717" source="87" target="64">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="718" source="87" target="26">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="719" source="70" target="57">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="720" source="89" target="70">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="720" source="89" target="70" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="721" source="85" target="57">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="722" source="89" target="85">
-        <attvalues>
-          <attvalue for="value" value="5"/>
-        </attvalues>
+      <edge id="722" source="89" target="85" weight="5.0">
+        <attvalues/>
       </edge>
       <edge id="723" source="89" target="57">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="724" source="21" target="57">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="725" source="67" target="57">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="726" source="64" target="57">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="727" source="89" target="21">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="727" source="89" target="21" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="728" source="89" target="67">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="728" source="89" target="67" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="729" source="89" target="64">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="730" source="8" target="64">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="730" source="8" target="64" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="731" source="85" target="73">
-        <attvalues>
-          <attvalue for="value" value="6"/>
-        </attvalues>
+      <edge id="731" source="85" target="73" weight="6.0">
+        <attvalues/>
       </edge>
       <edge id="732" source="89" target="73">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="733" source="17" target="63">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="734" source="17" target="64">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="735" source="90" target="91">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="735" source="90" target="91" weight="3.0">
+        <attvalues/>
       </edge>
       <edge id="736" source="92" target="90">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="737" source="92" target="91">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="737" source="92" target="91" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="738" source="93" target="92">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="739" source="93" target="90">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="740" source="93" target="91">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="741" source="93" target="94">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="741" source="93" target="94" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="742" source="97" target="92">
-        <attvalues>
-          <attvalue for="value" value="5"/>
-        </attvalues>
+      <edge id="742" source="97" target="92" weight="5.0">
+        <attvalues/>
       </edge>
-      <edge id="743" source="96" target="95">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="743" source="96" target="95" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="744" source="94" target="91">
-        <attvalues>
-          <attvalue for="value" value="11"/>
-        </attvalues>
+      <edge id="744" source="94" target="91" weight="11.0">
+        <attvalues/>
       </edge>
       <edge id="745" source="97" target="98">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="746" source="92" target="98">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="746" source="92" target="98" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="747" source="93" target="97">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="748" source="94" target="96">
-        <attvalues>
-          <attvalue for="value" value="29"/>
-        </attvalues>
+      <edge id="748" source="94" target="96" weight="29.0">
+        <attvalues/>
       </edge>
-      <edge id="749" source="70" target="96">
-        <attvalues>
-          <attvalue for="value" value="17"/>
-        </attvalues>
+      <edge id="749" source="70" target="96" weight="17.0">
+        <attvalues/>
       </edge>
-      <edge id="750" source="94" target="70">
-        <attvalues>
-          <attvalue for="value" value="23"/>
-        </attvalues>
+      <edge id="750" source="94" target="70" weight="23.0">
+        <attvalues/>
       </edge>
-      <edge id="751" source="99" target="70">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="751" source="99" target="70" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="752" source="99" target="96">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="753" source="99" target="94">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="754" source="97" target="100">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="754" source="97" target="100" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="755" source="92" target="100">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="755" source="92" target="100" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="756" source="70" target="101">
-        <attvalues>
-          <attvalue for="value" value="4"/>
-        </attvalues>
+      <edge id="756" source="70" target="101" weight="4.0">
+        <attvalues/>
       </edge>
-      <edge id="757" source="94" target="101">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="757" source="94" target="101" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="758" source="101" target="96">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="758" source="101" target="96" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="759" source="102" target="96">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="760" source="70" target="91">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="760" source="70" target="91" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="761" source="67" target="91">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="761" source="67" target="91" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="762" source="94" target="67">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="762" source="94" target="67" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="763" source="92" target="96">
-        <attvalues>
-          <attvalue for="value" value="4"/>
-        </attvalues>
+      <edge id="763" source="92" target="96" weight="4.0">
+        <attvalues/>
       </edge>
-      <edge id="764" source="91" target="103">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="764" source="91" target="103" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="765" source="89" target="91">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="766" source="21" target="91">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="766" source="21" target="91" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="767" source="104" target="91">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="768" source="70" target="103">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="769" source="89" target="103">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="770" source="94" target="103">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="771" source="67" target="103">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="772" source="21" target="103">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="773" source="104" target="103">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="774" source="104" target="70">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="775" source="89" target="94">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="776" source="89" target="104">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="777" source="21" target="94">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="778" source="104" target="94">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="779" source="104" target="67">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="779" source="104" target="67" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="780" source="104" target="21">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="780" source="104" target="21" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="781" source="93" target="70">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="781" source="93" target="70" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="782" source="106" target="97">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="783" source="107" target="91">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="783" source="107" target="91" weight="3.0">
+        <attvalues/>
       </edge>
       <edge id="784" source="108" target="103">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="785" source="70" target="92">
-        <attvalues>
-          <attvalue for="value" value="3"/>
-        </attvalues>
+      <edge id="785" source="70" target="92" weight="3.0">
+        <attvalues/>
       </edge>
-      <edge id="786" source="94" target="92">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="786" source="94" target="92" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="787" source="108" target="109">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="787" source="108" target="109" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="788" source="109" target="105">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="789" source="109" target="91">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="789" source="109" target="91" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="790" source="107" target="109">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="790" source="107" target="109" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="791" source="108" target="105">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
-      <edge id="792" source="108" target="91">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="792" source="108" target="91" weight="2.0">
+        <attvalues/>
       </edge>
-      <edge id="793" source="107" target="108">
-        <attvalues>
-          <attvalue for="value" value="2"/>
-        </attvalues>
+      <edge id="793" source="107" target="108" weight="2.0">
+        <attvalues/>
       </edge>
       <edge id="794" source="91" target="105">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
       <edge id="795" source="107" target="105">
-        <attvalues>
-          <attvalue for="value" value="1"/>
-        </attvalues>
+        <attvalues/>
       </edge>
     </edges>
   </graph>
