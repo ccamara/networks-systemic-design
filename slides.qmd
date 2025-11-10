@@ -1,6 +1,6 @@
 ---
-title: "Visualising complexity: Networks"
-subtitle: "Creating and visualising Networks with Gephi"
+title: "Creating and visualising Networks with Gephi"
+subtitle: "Networks: an option to visualise complexity"
 author: "Carlos Cámara-Menoyo"
 location: "Systemic Design | University of Warwick"
 format: 
@@ -10,6 +10,7 @@ format:
     #controls-layout: bottom-right
     embed-resources: true
     logo: assets/figs/uow_logo.svg
+    transition: slide
 title-slide-attributes:
   data-background-image: assets/figs/nastya-dulhiier-OKOOGO578eo-unsplash.jpg
   #data-background-size: contain
@@ -57,23 +58,19 @@ Centre for Interdisciplinary Methodologies
 :::
 :::::
 
-# Preamble
-
-**Visualising Food-Energy-Water nexus**
+# Preamble: **Food-Energy-Water nexus**
 
 ::: notes
 Let me start with the story of how I met Greg. It will make sense in a second, I promise.
 
 I got to know him in a project (Creating Interfaces) where
 
+I met Greg in a project where we were trying to understand how a particular type of complex system -that of Food-Energy-Water- was visualised, and create a representation of it.
+
 Explain that we got to know each other in Creating interfaces. Explain the aim. You have been working with system, so Probably you know how complex they are, and how difficult it is to visualise them , either to gain understanding or communicating them. Today wwe will focus in one way of approaching the problem: creating and visualising networks
 :::
 
-I met Greg in a project where we were trying to understand how a particular type of complex system -that of Food-Energy-Water- was visualised, and create a representation of it.
-
-![](assets/figs/fwe/Bijl2018_2.png)
-
-![](assets/figs/fwe/nourishNourishFoodSystem2020_0.png)
+![](assets/figs/fwe/fwe_composite.png)
 
 ##  {.center background-color="#F1977F"}
 
@@ -110,23 +107,27 @@ This is not a course on network analysis. Just visualisation/representation.
 # Overview {background-color="#A499F4"}
 
 1.  Key concepts
-2.  Guided tasks: I will be demonstrating how to use a software and you will need to replicate the same steps
-3.  Bring Your Own Data (BYOD) Lab: here, you will be working autonomously with the dataset you've been producing.
+2.  Learning by doing
+    1.  Guided tasks: I will be demonstrating how to use a software and you will need to replicate the same steps
+    2.  Bring Your Own Data (BYOD) Lab: here, you will be working autonomously with the dataset you've been producing.
 
 # Key Concepts {background-color="#51D7C1"}
 
-# Networks
+# Networks{.smaller}
 
 ::::: columns
 ::: {.column width="50%"}
-Sets of entities (nodes) linked/connected by relationships (edges) that allow interaction, flow, or influence among them.
+A **network** is a *structure* in which two or more [entities]{.highlight} (vertices/nodes) are linked one to another by some kind of [relationship]{.highlight} via an edge (or link) that allow interaction, flow, or influence among the connected part.
 
-A **network** is a structure in which two or more objects (vertices/nodes) are linked one to another by some kind of relationship via an edge (or link).
+Networks can be:
 
--   Vertices can be connected to one or more vertices or unconnected (0 edges)
+-   **Undirected**: these are reciprocal relationships where the direction of the link does not matter, $A → B = B → A$ (e.g. friendship, siblings)
+
+-   **Directed**: relationshop where the source and target matters and are not reciprocal, $A → B \neq B → A$ (e.g. following/follower in social media, citations...)
 :::
 
 ::: {.column width="50%"}
+
 ![Königsberg circa 1736. Streets, bridges... can be considered networks.](assets/figs/bridges-with-water-600x418.png)
 :::
 :::::
@@ -135,7 +136,7 @@ A **network** is a structure in which two or more objects (vertices/nodes) are l
 
 ::::: columns
 ::: {.column width="50%"}
-A **graph** is a representation of a network. I.e. it's how networks are stored and represented.
+A **graph** is an abstraction of a network. I.e. it's how networks are stored, conceptualised and represented.
 
 The bare minimum information that a graph needs are:
 
@@ -145,25 +146,79 @@ The bare minimum information that a graph needs are:
 
     -   a `Label`: a human-readable, longer text
 
-    -   (optionally, but useful): a number of fields describing
+    -   (optionally, but useful): a number of fields describing some features/attributes
 
 -   [**Edges** (or links)]{.highlight}: defined as a pair of columns
 
     -   `source` the id of the node from where the edge starts
 
     -   `target` the if of the node where the edge ends
+    
+    -   `unique ID`: a machine-readable unique identifier for each link (different from nodes)
 
-    -   optionally, we may want to add ids to edges, labels, and attributes.
+    -   optionally, we may want to add labels, and attributes to edges.
 :::
 
 ::: {.column width="50%"}
-![Euler](assets/figs/euler-graph.png)
+![First graph, made by Euler in 1736 to solve the problem of whether it was possible to visit Königsberg 4 quarters while crossing each of the 7 bridges only once](assets/figs/euler-graph.png)
 :::
 :::::
 
-##  {.smaller}
 
-Let's see some examples:
+# Systems, networks, graphs {.smaller}
+
+Not all networks are systems, but networks can be useful, for example, to identifying (parts of) entities working as systems.
+
+| Dimension | System | Network | Graph |
+|------------------|------------------|------------------|------------------|
+| **Definition** | An organized collection of physically or conceptually **interrelated components** that [together achieve a **purpose** or exhibit emergent behavior]{.highlight}. | A set of entities (nodes) [linked by relationships]{.highlight}. (edges) that allow interaction, flow, or influence among them. | Mathematical model to store and conceptualise networks. |
+| **keyword** | Meaning | Representation | Abstraction |
+| **Scope / Purpose** | Emphasizes *function* (inputs → outputs, goals, control). | Emphasizes *interaction* (flow of information, material, influence). | Abstraction. Purely *structural.* |
+| **Examples** | Solar system, Digestive system, Surveillance system, | Families and friends, Social media interactions, Publications Co-Citation... | Files in `*.graphml`\`, `*.gexf`, a pair of `.csv` containing nodes and edges... |
+
+
+# Software: Gephi
+
+::::: columns
+::: {.column width="80%"}
+[Gephi](https://gephi.org/) is an open-source network visualisation and analysis software. It is available for Windows, MacOS and Linux and widely used in academia and industry.
+
+There are two variants:
+
+1.  [Gephi Desktop](https://gephi.org/desktop/): a standalone application that you can install in your computer, and offers the full functionality of Gephi.
+2.  [Gephi Lite](https://gephi.org/lite): a web-based version with limited functionality.
+:::
+
+::: {.column width="20%"}
+![Gephi logo](https://gephi.org/icons/gephi-desktop-logo-inverted.svg){fig-align="right"}
+:::
+:::::
+
+## More...
+
+We can use dedicated software to create, analyse, visualise and/or export graphs:
+
+-   [retina](https://ouestware.gitlab.io/retina/beta/): online, interactive data visualisation
+-   `igraph`: library to create, analyse, visualise and export graphs from programming languages (`R` or `Python`) (out of scope)
+
+# Guided task {background-color="#51D7C1"}
+
+Using a provided network, we will be using Gephi to visualise and enquiry about our data.
+
+# The dataset: Star Wars Social Network {background-image="assets/figs/starwars_poster_2835756.jpg" background-opacity="0.4" background-color="#000000"}
+
+Gabasova, E. (2016). Star Wars social network. DOI: <https://doi.org/10.5281/zenodo.1411479>.\n
+
+
+The dataset contain 110 characters and 398 links from episodes I to VII.
+
+-   two characters are connected if they speak together within the same scene.
+-   data can be downloaded from [here (nodes)](https://github.com/ccamara/networks-systemic-design/raw/refs/heads/main/data/starwars_nodes.csv) and [here (edges)](https://github.com/ccamara/networks-systemic-design/raw/refs/heads/main/data/starwars_edges.csv)
+
+<!-- previous background https://cdn.europosters.eu/image/750/posters/star-wars-characters-i4731.jpg -->
+
+
+##  {.smaller}
 
 ```{r}
 #| tbl-cap: "Top 10 nodes, according to `scenes`."
@@ -207,67 +262,9 @@ edges |>
 :::
 :::::
 
-# Systems, networks, graphs {.smaller}
+## Enquiring the dataset 
 
-Not all networks are systems, but systems can be abstracted as graphs and represented as networks
-
-| Dimension | System | Network | Graph |
-|------------------|------------------|------------------|------------------|
-| **Definition** | An organized collection of physically or conceptually **interrelated components** that [together achieve a **purpose** or exhibit emergent behavior]{.highlight}. | A set of entities (nodes) linked by relationships (edges) that allow interaction, flow, or influence among them. | Mathematical model to store data. |
-| **keyword** | Meaning | Representation | Abstraction |
-| **Scope / Purpose** | Emphasizes *function* (inputs → outputs, goals, control). | Emphasizes *interaction* (flow of information, material, influence). | Abstraction. Purely *structural.* |
-| **Examples** | Solar system, Digestive system, Surveillance system, | Families and friends, Social media interactions, Publications Co-Citation... | Files in `*.graphml`\`, `*.gexf`, a pair of `.csv` containing nodes and edges... |
-
-# Software
-
-We can use dedicated software to create, analyse, visualise and/or export graphs:
-
--   [Gephi](https://gephi.org/)
--   [retina](): online, interactive data visualisation
--   `igraph` (via `R` or `Python`) (out of scope)
-
-## Gephi
-
-::::: columns
-::: {.column width="80%"}
-[Gephi](https://gephi.org/) is an open-source network visualisation and analysis software. It is available for Windows, MacOS and Linux and widely used in academia and industry.
-
-There are two variants:
-
-1.  [Gephi Desktop](https://gephi.org/desktop/): a standalone application that you can install in your computer, and offers the full functionality of Gephi.
-2.  [Gephi Lite](https://gephi.org/lite): a web-based version with limited functionality.
-:::
-
-::: {.column width="20%"}
-![Gephi logo](https://gephi.org/icons/gephi-desktop-logo-inverted.svg){fig-align="right"}
-:::
-:::::
-
-## 
-
-![Gephi interface](https://gephi.org/images/screenshots/gephi-0.9.2-main-window.png)
-
-# Guided task {background-color="#51D7C1"}
-
-Using a provided network, we will be using Gephi to visualise and get insight
-
-# The dataset: Star Wars Social Network {background-image="assets/figs/starwars_poster_2835756.jpg" background-opacity="0.4" background-color="#000000"}
-
-Gabasova, E. (2016). Star Wars social network. DOI: <https://doi.org/10.5281/zenodo.1411479>.\n
-
-Things to consider about this dataset:
-
--   two characters are connected if they speak together within the same scene.
-
--   the data contain characters and links from episodes I to VII.
-
--   data can be downloaded from HERE AND HERE
-
-<!-- previous background https://cdn.europosters.eu/image/750/posters/star-wars-characters-i4731.jpg -->
-
-## Enquiring the dataset
-
-We may want to use this data to get a better understanding of the dynamics between the characters
+We may want to use this data to get a better understanding of the dynamics between the characters in the Star Wars franchise, for example:
 
 -   Who are the most important characters?
     -   Overall, vs per episode
@@ -424,7 +421,7 @@ A possible approach could be using some of the existing attributes.
 2.  On the Overview tab, choose the Appearance pane
 3.  From the Nodes tab within the Appearance pane, click on the icon size
 4.  Select Ranking
-5.  Choose the **numeric attribute** you want to use to set the size
+5.  Choose the **numeric attribute** (e.g. `Scenes`) you want to use to set the size
 6.  Set the minimum size and max values. Attributes with intermediate values will be interpolated linearly.
 :::
 
